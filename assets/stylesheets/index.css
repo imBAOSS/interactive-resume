@@ -1,8 +1,17 @@
+html {
+  height: 100%;
+  overflow: scroll;
+  
+}
+
 body {
-  height: 100vh;
+  height: 100%;
+  overflow: scroll;
 }
 
 img {
   height: 100%;
   width: auto;
+  object-fit: cover;
+  position: absolute;
 }

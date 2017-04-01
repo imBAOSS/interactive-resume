@@ -25,7 +25,7 @@
 *   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 *   THE SOFTWARE.
 **/
-const Scroll = (function($) {
+(function($) {
     $.jInvertScroll = function(sel, options) {
         var defaults = {
             width: 'auto',		    // The horizontal container width
@@ -96,5 +96,3 @@ const Scroll = (function($) {
         });
     };
 }(jQuery));
-
-module.exports = Scroll;

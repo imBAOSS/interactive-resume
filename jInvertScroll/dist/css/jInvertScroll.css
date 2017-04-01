@@ -1,7 +1,6 @@
 /* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
-body
-{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 
 /**
@@ -10,7 +9,12 @@ body
   */
 .scroll
 {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.bg {
+  z-index: 1;
+  width: 5000px;
 }
