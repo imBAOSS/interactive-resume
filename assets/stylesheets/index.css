@@ -1,14 +1,16 @@
 html, body {
-  height: auto;
-  width: auto;
-  display: block;
-}
-
-img {
   height: 100%;
   width: 100%;
-  position: fixed;
+  display: block;
+  position: relative;
+}
+
+.content {
+  overflow: auto;
+  position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/test-background.png')
 }
