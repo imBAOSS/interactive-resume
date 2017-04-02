@@ -1,10 +1,10 @@
-$(function() {
+$(document).ready(
 
   function createScrollPath() {
     $.fn.scrollPath('getPath')
-      .moveTo(400, 50, {name: 'Title Page'})
-      .lineTo(400, 100, {name: 'Start'})
-      .lineTo(800, 100, {name: 'First'});
+      .moveTo(400, 400, {name: 'Title Page'})
+      .lineTo(400, 800, {name: 'Start'})
+      .lineTo(1200, 800, {name: 'First'});
   }
 
   $(".content").scrollPath({
@@ -13,4 +13,4 @@ $(function() {
   	scrollBar: false
   });
 
-})
+);

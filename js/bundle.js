@@ -70,23 +70,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-$(function() {
-
-  function createScrollPath() {
-    $.fn.scrollPath('getPath')
-      .moveTo(400, 50, {name: 'Title Page'})
-      .lineTo(400, 100, {name: 'Start'})
-      .lineTo(800, 100, {name: 'First'});
-  }
-
-  $(".content").scrollPath({
-  	drawPath: true,
-  	wrapAround: false,
-  	scrollBar: false
-  });
-
-})
-
+throw new Error("Module parse failed: /Users/BAOSS/Dropbox/Programming/AppAcademy/Curriculum/Projects/js-project/js/app.js Unexpected token (10:2)\nYou may need an appropriate loader to handle this file type.\n|   }\n| \n|   $(\".content\").scrollPath({\n|   \tdrawPath: true,\n|   \twrapAround: false,");
 
 /***/ })
 /******/ ]);

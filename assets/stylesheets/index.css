@@ -1,16 +1,18 @@
 html, body {
   height: 100%;
   width: 100%;
-  display: block;
   position: relative;
 }
 
 .content {
-  overflow: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
-  background-image: url('../images/test-background.png')
+  overflow: auto;
+}
+
+.background-image {
+  height: 1440px;
+  width: 5000px;
+  background-image: url('../images/test-background.png');
+  background-size: cover;
 }
