@@ -13,7 +13,9 @@ Result of scrollpath:
 
 ### Day 2
 
-Next step is to determine how I can record the scroll position everytime I scroll so that at any point, I can specify an animation to take place. As soon as I can confirm this, I'll start implementing a first "panel" of the story. A couple jQuery methods I'm looking into include `.offSet()`, `.scroll()` and `.scrollTop()`
+Next step is to determine how I can record the scroll position everytime I scroll so that at any point, I can specify an animation to take place. As soon as I can confirm this, I'll start implementing a first "panel" of the story. A couple jQuery methods I'm looking into include `.offSet()`, `.scroll()` and `.scrollTop()`.
+
+I've kind of hit a road block in trying to record the scroll position.
 
 
 [scrollpath]: ./images/scroll-path.gif
