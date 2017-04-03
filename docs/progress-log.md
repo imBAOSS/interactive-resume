@@ -7,3 +7,13 @@ After some digging around and a google search looking up 'scroll path,' I found 
 At the present moment, Joel Besada's plugin seems to be the most straight forward, so in the interest of time, I'll give that a go first.
 
 Also, in my scrolling research, I may have found a good plugin for animating based on scroll position: (http://scrollmagic.io/)
+
+Result of scrollpath:
+![ScrollPath][scrollpath]
+
+### Day 2
+
+Next step is to determine how I can record the scroll position everytime I scroll so that at any point, I can specify an animation to take place. As soon as I can confirm this, I'll start implementing a first "panel" of the story. A couple jQuery methods I'm looking into include `.offSet()`, `.scroll()` and `.scrollTop()`
+
+
+[scrollpath]: ./images/scroll-path.gif

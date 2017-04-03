@@ -70,9 +70,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-$(document).ready(init)
-
-function init() {
+$(document).ready(function() {
 
   $.fn.scrollPath('getPath', {scrollSpeed: 10})
     .moveTo(500, 360, {name: 'title-page'})
@@ -81,20 +79,22 @@ function init() {
 
   $(".background-image").scrollPath({ drawPath: true });
 
-};
+  $(window).scroll(function(event) {
+    console.log(`event: ${event.type}`);
+    console.log(`event: ${event}`);
+    let scrollPos = getScrollPosition();
+    console.log(`scrollPos: ${scrollPos}`);
+  });
 
-function getScrollPosition() {
-  return $(window).scrollTop().valueOf();
-}
+  function getScrollPosition() {
+    return $(window).scrollTop().valueOf();
+  }
 
-$(window).scroll(function(event) {
-  let scrollPos = getScrollPosition();
-  console.log(scrollPos);
-});
+  function orientHarry() {
+    // get scroll DIRECTION
+  }
 
-function orientHarry() {
-  // get scroll DIRECTION
-}
+})
 
 
 /***/ })
