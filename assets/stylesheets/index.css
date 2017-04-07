@@ -2,13 +2,23 @@ html, body {
   height: 100%;
   width: 100%;
   position: relative;
+  overflow: auto;
+}
+
+.content-wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
 .content {
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  position: relative;
+  border: 1px solid black;
 }
 
 .background-image {
@@ -19,4 +29,41 @@ html, body {
   width: 500%;
   background-image: url('../images/test-background.png');
   background-size: cover;
+}
+
+.content > div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.one {
+  background-image: url('../images/1.png');
+  top: 0%;
+  left: 0%;
+}
+
+.two {
+  background-image: url('../images/2.png');
+  top: 100%;
+  left: 0%;
+}
+
+.three {
+  background-image: url('../images/3.png');
+  top: 100%;
+  left: 100%;
+}
+
+.four {
+  background-image: url('../images/4.png');
+  top: 100%;
+  left: 200%;
+}
+
+.five {
+  background-image: url('../images/5.png');
+  top: 200%;
+  left: 200%;
 }

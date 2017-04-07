@@ -86,33 +86,36 @@ $(document).ready(function() {
 })
 
 function processDownArrow() {
-  let $top = $('.background-image').css('top');
-  let $left = $('.background-image').css('left');
-  let top = Number($top.match(/\-?\d+/))
-  let left = Number($left.match(/\-?\d+/))
+  let $top = $('.content').position().top;
+  let $left = $('.content').position().left;
+  console.log($top);
 
-  if (top < -2300 && left <= 0) {
-    left -= 100
-    $('.background-image').css('left', `${left}px`)
-    console.log(left);
+  let height = $(window).height();
+  let width = $(window).width();
+
+
+  if ($top <= -height && $left <= -width) {
+    $left -= width*0.05
+    $('.content').css('left', `${$left}px`)
   } else {
-    top -= 100
-    $('.background-image').css('top', `${top}px`)
+    $top -= height*0.05
+    $('.content').css('top', `${$top}px`)
   }
 }
 
 function processUpArrow() {
-  let $top = $('.background-image').css('top');
-  let $left = $('.background-image').css('left');
-  let top = Number($top.match(/\-?\d+/))
-  let left = Number($left.match(/\-?\d+/))
+  let $top = $('.content').css('top');
+  let $left = $('.content').css('left');
 
-  if (top < -2300 && left >= 0) {
-    left += 100
-    $('.background-image').css('left', `${left}px`)
+  let height = $(window).height();
+  let width = $(window).width();
+
+  if ($top <= -height && $left <= -width) {
+    $left += width*0.05
+    $('.content').css('left', `${$left}px`)
   } else {
-    top += 100
-    $('.background-image').css('top', `${top}px`)
+    $top += height*0.05
+    $('.content').css('top', `${$top}px`)
   }
 }
 
