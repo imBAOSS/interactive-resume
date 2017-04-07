@@ -7,14 +7,12 @@ html, body {
 .content {
   height: 100%;
   width: 100%;
-  overflow: auto;
+  overflow: scroll;
 }
 
 .background-image {
   height: auto;
   width: auto;
-  /*background-image: url('../images/test-background.png');*/
-  background-size: cover;
   position: relative;
 }
 .background-image div {
@@ -23,6 +21,17 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.harry {
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  background-color: blue;
+  filter: opacity(.5);
+  border: 1px solid black;
+  margin: 50% 50%;
+  z-index: 999;
 }
 
 .title-page {

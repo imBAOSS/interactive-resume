@@ -7,10 +7,11 @@ $(document).ready(function() {
 
   $(".background-image").scrollPath({ drawPath: true });
 
-  $(window).on('scroll', function(event) {
-    debugger;
-    let scrollPosition = $(document).scrollTop().valueOf();
-    console.log(scrollPosition);
+  $('.background-image').scroll(function(event) {
+    let posY = $(document).scrollTop().valueOf();
+    let posX = $(document).scrollLeft().valueOf();
+    console.log(posY);
+    console.log(posX);
   });
 
   function getScrollPosition() {
@@ -21,4 +22,6 @@ $(document).ready(function() {
     // get scroll DIRECTION
   }
 
+  console.log($('.first').position());
+  console.log($('.harry').position());
 })
