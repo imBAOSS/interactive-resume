@@ -2,18 +2,21 @@ html, body {
   height: 100%;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .content {
   height: 100%;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .background-image {
-  height: 100%;
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 500%;
+  width: 500%;
   background-image: url('../images/test-background.png');
   background-size: cover;
-  position: relative;
 }
