@@ -31,7 +31,7 @@ function processDownArrow() {
   let $height = $(window).height();
   let $width = $(window).width();
 
-  if ($top <= -$height*0.95 && $left >= -$width*0.95*2) {
+  if ($top <= -$height*0.95 && $left >= -$width*2) {
     $left -= $width*0.05
     $('.content').css('left', `${$left}px`)
   } else {
@@ -62,9 +62,7 @@ function  triggerAnimations() {
   let $left = $('.content').position().left;
 
   if ($left <= -1070) {
-    $('.three').addClass('animated fadeOut').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-      $(this).removeClass('animated fadeOut');
-    })
+    $('.three').addClass('animated fadeOut')
   }
 }
 
@@ -79,3 +77,5 @@ $(window).resize(function() {
   // calculate windowHeight and windowWidth
   // calculate distance needed to travel
 })
+
+let animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
