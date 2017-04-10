@@ -104,22 +104,22 @@ $(document).ready(function() {
     let $width = $(window).width();
 
       // first downward vertical navigation
-    if ($top >= -$height*2) {
+    if ($top > -$height*2) {
       $top -= $height*0.05
       $('.content').css('top', `${$top}px`)
 
       // first rightward horizontal navigation
-    } else if ($top < -$height*2 && $left >= -$width*8 ) {
+    } else if ($top <= -$height*2 && $left >= -$width*8 ) {
       $left -= $width*0.05
       $('.content').css('left', `${$left}px`)
 
       // second downward vertical navigation
-    } else if ($left < -$width*8 && $top >= (-$height*2 + -height*0.95)) {
+    } else if ($left < -$width*8 && $top > -$height*3) {
       $top -= $height*0.05
       $('.content').css('top', `${$top}px`)
 
       // second rightward horizontal navigation
-    } else if ($top < -$height*3 && $left >= -$width*9) {
+    } else if ($top <= -$height*3 && $left >= -$width*9) {
       $left -= $width*0.05
       $('.content').css('left', `${$left}px`)
     }
