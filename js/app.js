@@ -31,7 +31,7 @@ function processDownArrow() {
   let $height = $(window).height();
   let $width = $(window).width();
 
-  if ($top <= -$height*0.95 && $left >= -$width*2) {
+  if ($top < -$height*2) {
     $left -= $width*0.05
     $('.content').css('left', `${$left}px`)
   } else {
