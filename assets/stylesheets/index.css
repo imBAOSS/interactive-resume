@@ -9,6 +9,26 @@ html, body {
   overflow: auto;
 }
 
+.harry-container {
+  height: 242px;
+  width: 151px;
+  position: fixed;
+  top: auto;
+  bottom: 17.9%;
+  left: 50%;
+  right: 50%;
+  z-index: 999;
+}
+
+.harry {
+  background-image: url('../images/harry-sprites.png');
+  height: 100%;
+  width: 100%;
+  background-position: -595px -386px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
 .content-wrapper {
   position: fixed;
   height: 100%;
