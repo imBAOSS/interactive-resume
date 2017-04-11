@@ -76,9 +76,38 @@ $(document).ready(function() {
 
   }
 
+  function resetHarryPosition(e) {
+    if (e.keyCode === 40) {
+      $('.harry').addClass('walk-face-right-1')
+      setTimeout(function() {
+        $('.harry').removeClass('walk-face-right-1')
+      }, 1000);
+    }
+  }
+  function animateHarry(e) {
+    let harry = $('.harry');
+    if (e.keyCode === 40) {
+      harry.addClass('walk-face-right-2')
+      setTimeout(function() {
+        harry.removeClass('walk-face-right-2')
+      }, 500);
+      // setTimeout(function() {
+      //   harry.addClass('walk-face-right-1')
+      // }, 500);
+      // setTimeout(function() {
+      //   harry.removeClass('walk-face-right-1')
+      // }, 500);
+    }
+  }
+
+  $(window).keyup(function(e) {
+    resetHarryPosition(e);
+  })
+
   $(window).keydown(function(e) {
     moveLayers(e);
     triggerAnimations();
+    animateHarry(e);
     // positionHarry();
   })
 
@@ -90,4 +119,4 @@ $(document).ready(function() {
 
 })
 
-let animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+let animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';

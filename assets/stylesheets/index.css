@@ -11,7 +11,7 @@ html, body {
 
 .harry-container {
   height: 242px;
-  width: 151px;
+  width: 175px;
   position: fixed;
   top: auto;
   bottom: 17.9%;
@@ -20,13 +20,24 @@ html, body {
   z-index: 999;
 }
 
-.harry-face-right {
+.harry {
   background-image: url('../images/harry-sprites.png');
   height: 100%;
   width: 100%;
-  background-position: -595px -386px;
   overflow: hidden;
   background-repeat: no-repeat;
+}
+
+.face-right {
+  background-position: -595px -386px;
+}
+
+.walk-face-right-1 {
+  background-position: -415px -386px;
+}
+
+.walk-face-right-2 {
+  background-position: -775px -386px;
 }
 
 .content-wrapper {
