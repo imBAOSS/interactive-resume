@@ -124,18 +124,7 @@ $(document).ready(function() {
       $('.content').css('left', `${$left}px`)
     }
 
-
-
-
-    // if ($top < -$height*2) {
-    //   $left -= $width*0.05
-    //   $('.content').css('left', `${$left}px`)
-    // } else {
-    //   $top -= $height*0.05
-    //   $('.content').css('top', `${$top}px`)
-    // }
     console.log($('.content').position());
-
   }
 
   function processUpArrow() {

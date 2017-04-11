@@ -20,7 +20,7 @@ html, body {
   z-index: 999;
 }
 
-.harry {
+.harry-face-right {
   background-image: url('../images/harry-sprites.png');
   height: 100%;
   width: 100%;
