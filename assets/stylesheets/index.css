@@ -10,13 +10,12 @@ html, body {
 }
 
 .harry-container {
-  height: 242px;
-  width: 175px;
+  height: 242px !important;
+  width: 175px !important;
   position: fixed;
   top: auto;
-  bottom: 17.9%;
-  left: 50%;
-  right: 50%;
+  bottom: 28.25%;
+  left: 100px;
   z-index: 999;
 }
 
