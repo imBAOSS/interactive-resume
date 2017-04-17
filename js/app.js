@@ -31,12 +31,12 @@ $(document).ready(function() {
 
 
       // first downward vertical navigation
-    if ($top > -($height*2)) {
+    if ($top > -$height*2) {
       $top -= $height*0.05
       $('.content').css('top', `${$top}px`)
 
       // first rightward horizontal navigation
-    } else if ($top >= $height*2 && $left >= -$width*8 ) {
+    } else if ($top <= -$height*2 && $left >= -$width*8 ) {
       $left -= $width*0.05
       $('.content').css('left', `${$left}px`)
 
@@ -119,6 +119,9 @@ $(document).ready(function() {
 })
 
 })
+
+console.log($('.background').height());
+console.log($('.background').width());
 
 let $height = $(window).height();
 let $width = $(window).width();

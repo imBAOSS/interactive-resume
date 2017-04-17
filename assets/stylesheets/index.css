@@ -63,54 +63,8 @@ html, body {
   /*background-position: center;*/
 }
 
-/*.one {
-  background-image: url('../images/1.png');
-  top: 0%;
-  left: 0%;
-}
-
-.two {
-  background-image: url('../images/2.png');
-  top: 100%;
-  left: 0%;
-}
-
-.three {
-  background-image: url('../images/3.png');
-  top: 100%;
-  left: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.four {
-  background-image: url('../images/4.png');
-  top: 100%;
-  left: 200%;
-}
-
-.five {
-  background-image: url('../images/5.png');
-  top: 200%;
-  left: 200%;
-}*/
-
 .background {
   background-image: url('../images/full-background.png');
   top: 0%;
   left: 0%;
 }
-
-/*.frame-2 {
-  background-image: url('../images/frame-2.png');
-  top: 100%;
-  left: 0%;
-}
-
-.frame-3 {
-  background-image: url('../images/frame-3.png');
-  top: 200%;
-  left: 0%;
-}*/
