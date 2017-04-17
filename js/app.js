@@ -25,8 +25,11 @@ $(document).ready(function() {
   function processDownArrow() {
     let $top = $('.content').position().top;
     let $left = $('.content').position().left;
+    let $harryLeft = $('.harry-container').position().left;
+    let $harryTop = $('.harry-container').position().top;
+    console.log($harryLeft);
 
-    console.log($('.content').position());
+    // console.log($('.content').position());
 
 
 
@@ -38,20 +41,30 @@ $(document).ready(function() {
       // first rightward horizontal navigation
     } else if ($top <= -$height*2 && $left >= -$width*8 ) {
       $left -= $width*0.05
+      $harryLeft += $width*0.05
+      console.log($harryLeft);
+
       $('.content').css('left', `${$left}px`)
+      $('.harry-container').css('left', `${$harryLeft}px`)
 
       // second downward vertical navigation
     } else if ($left < -$width*8 && $top > -$height*3) {
       $top -= $height*0.05
+      $harryTop += $height*0.05
+
       $('.content').css('top', `${$top}px`)
+      $('.harry-container').css('top', `${$harryTop}px`)
 
       // second rightward horizontal navigation
     } else if ($top <= -$height*3 && $left >= -$width*9) {
       $left -= $width*0.05
+      $harryLeft += $width*0.05
+
       $('.content').css('left', `${$left}px`)
+      $('.harry-container').css('left', `${$harryLeft}px`)
     }
 
-    console.log($('.content').position());
+    // console.log($('.content').position());
   }
 
   function processUpArrow() {
