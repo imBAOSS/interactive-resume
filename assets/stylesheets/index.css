@@ -1,59 +1,219 @@
 html, body {
   height: 100%;
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
 }
 
-.content {
-  height: 100%;
-  width: 100%;
-  overflow: scroll;
-}
-
-.background-image {
-  height: auto;
-  width: auto;
-  position: relative;
-}
-.background-image div {
-  position: absolute;
-  background-color: gray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.harry {
-  position: absolute;
-  height: 200px;
-  width: 100px;
-  background-color: blue;
-  filter: opacity(.5);
-  border: 1px solid black;
-  margin: 50% 50%;
+.harry-container {
+  height: 242px !important;
+  width: 175px !important;
+  position: fixed;
+  top: auto;
+  bottom: 28.25%;
+  left: 300px;
   z-index: 999;
 }
 
-.title-page {
-  border: 1px solid black;
-  height: 720px;
-  width: 1000px;
+.harry {
+  background-image: url('../images/harry-sprites.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.face-right {
+  background-position: -595px -386px;
+}
+
+.walk-face-right-1 {
+  background-position: -415px -386px;
+}
+
+.walk-face-right-2 {
+  background-position: -775px -386px;
+}
+
+.content-wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.content {
   top: 0;
   left: 0;
+  height: 400%;
+  width: 1100%;
+  position: relative;
 }
 
-.start {
-  border: 1px solid black;
-  height: 720px;
-  width: 1000px;
-  top: 720px;
-  left: 0;
+.content > div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  /*background-position: center;*/
 }
 
-.first {
-  border: 1px solid black;
-  height: 720px;
-  width: 1000px;
-  top: 720px;
-  left: 1000px;
+.background {
+  background-image: url('../images/full-background.png');
+  top: 0%;
+  left: 0%;
+}
+
+.hourglass-container {
+  bottom: 28.25%;
+  left: 100px;
+  height: 300px !important;
+  width: 1500px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hourglass-container > div {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.house-hourglass-cont {
+  height: 300px;
+  width: 200px;
+  z-index: 998;
+  position: relative;
+}
+
+.house-hourglass {
+  background-image: url('../images/housepoints.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.gryffindor {
+  background-position: -95px -40px;
+}
+
+.hufflepuff {
+  background-position: -403px -40px;
+}
+
+.ravenclaw {
+  background-position: -697px -40px;
+}
+
+.slytherin {
+  background-position: -1004px -40px;
+}
+
+.door-container {
+  height: 800px !important;
+  width: 500px !important;
+  z-index: 998;
+  position: relative;
+  bottom: 28.25%;
+  left: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.door {
+  background-image: url('../images/door.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: -128px -76px;
+}
+
+.knight-container {
+  height: 500px !important;
+  width: 200px !important;
+  z-index: 998;
+  position: relative;
+  bottom: 28.25%;
+  left: 1900px;
+}
+
+.knight {
+  background-image: url('../images/knight.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: -145px -117px;
+}
+
+.g-banner-container {
+  height: 500px !important;
+  width: 350px !important;
+  z-index: 998;
+  position: relative;
+  bottom: 33%;
+  left: 2500px;
+}
+
+.h-banner-container {
+  height: 500px !important;
+  width: 350px !important;
+  z-index: 998;
+  position: relative;
+  bottom: 33%;
+  left: 3000px;
+}
+
+.r-banner-container {
+  height: 500px !important;
+  width: 350px !important;
+  z-index: 998;
+  position: relative;
+  bottom: 33%;
+  left: 3500px;
+}
+
+.s-banner-container {
+  height: 500px !important;
+  width: 350px !important;
+  z-index: 998;
+  position: relative;
+  bottom: 33%;
+  left: 4000px;
+}
+
+.banner {
+  background-image: url('../images/banners.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.gryffindor-banner {
+  background-position: -55px 0px;
+}
+
+.hufflepuff-banner {
+  background-position: -432px 0px;
+}
+
+.ravenclaw-banner {
+  background-position: -812px 0px;
+}
+
+.slytherin-banner {
+  background-position: -1181px 0px;
 }
