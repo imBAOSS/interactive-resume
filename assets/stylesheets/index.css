@@ -67,3 +67,72 @@ html, body {
   top: 0%;
   left: 0%;
 }
+
+.hourglass-container {
+  bottom: 28.25%;
+  left: 100px;
+  height: 300px !important;
+  width: 1500px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hourglass-container > div {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.house-hourglass-cont {
+  height: 300px;
+  width: 200px;
+  z-index: 998;
+  position: relative;
+}
+
+.house-hourglass {
+  background-image: url('../images/housepoints.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.gryffindor {
+  background-position: -95px -40px;
+}
+
+.hufflepuff {
+  background-position: -403px -40px;
+}
+
+.ravenclaw {
+  background-position: -697px -40px;
+}
+
+.slytherin {
+  background-position: -1004px -40px;
+}
+
+.door-container {
+  height: 800px !important;
+  width: 500px !important;
+  z-index: 998;
+  position: relative;
+  bottom: 28.25%;
+  left: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.door {
+  background-image: url('../images/door.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: -128px -76px;
+}
