@@ -218,6 +218,16 @@ html, body {
   background-position: -1181px 0px;
 }
 
+.work-exp {
+  margin: 100px 50px;
+}
+
+.work-exp ul {
+  /*font-family: 'Pompiere', cursive;*/
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 20px;
+}
+
 
 
 
