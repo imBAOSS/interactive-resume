@@ -155,7 +155,28 @@ $(document).ready(function() {
 
   function  triggerAnimations() {
     let $left = $('.content').position().left;
+    let $harryLeft = $('.harry-container').position().left;
 
+    triggerBannerAnimations($harryLeft);
+
+  }
+
+  function triggerBannerAnimations(harryPosition) {
+    if (harryPosition > 2100) {
+      $('.g-banner-container').addClass('drop-down')
+    }
+
+    if (harryPosition > 2400) {
+      $('.h-banner-container').addClass('drop-down')
+    }
+
+    if (harryPosition > 2900) {
+      $('.r-banner-container').addClass('drop-down')
+    }
+
+    if (harryPosition > 3400) {
+      $('.s-banner-container').addClass('drop-down')
+    }
   }
 
   function resetHarryPosition(e) {

@@ -162,7 +162,7 @@ html, body {
   width: 350px !important;
   z-index: 998;
   position: relative;
-  bottom: 33%;
+  bottom: 100%;
   left: 2500px;
 }
 
@@ -171,7 +171,7 @@ html, body {
   width: 350px !important;
   z-index: 998;
   position: relative;
-  bottom: 33%;
+  bottom: 100%;
   left: 3000px;
 }
 
@@ -180,7 +180,7 @@ html, body {
   width: 350px !important;
   z-index: 998;
   position: relative;
-  bottom: 33%;
+  bottom: 100%;
   left: 3500px;
 }
 
@@ -189,7 +189,7 @@ html, body {
   width: 350px !important;
   z-index: 998;
   position: relative;
-  bottom: 33%;
+  bottom: 100%;
   left: 4000px;
 }
 
@@ -216,4 +216,25 @@ html, body {
 
 .slytherin-banner {
   background-position: -1181px 0px;
+}
+
+
+
+
+/* ANIMATIONS */
+
+@keyframes drop-down {
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 33%;
+  }
+}
+
+.drop-down {
+  animation-name: drop-down;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
