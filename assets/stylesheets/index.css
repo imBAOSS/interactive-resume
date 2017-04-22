@@ -243,7 +243,6 @@ html, body {
 }
 
 .work-exp ul {
-  /*font-family: 'Pompiere', cursive;*/
   font-family: 'Patrick Hand SC', cursive;
   font-size: 20px;
 }
@@ -304,7 +303,8 @@ html, body {
 }
 
 .project-content p {
-
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 20px;
 }
 
 
