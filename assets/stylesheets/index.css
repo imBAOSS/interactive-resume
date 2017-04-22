@@ -157,11 +157,15 @@ html, body {
   background-position: -145px -117px;
 }
 
-.exp-banner-container {
+.banner-container {
   height: 300px !important;
   width: 500px !important;
   z-index: 998;
   position: relative;
+}
+
+.exp-container {
+  left: 2150px;
 }
 
 .exp-banner {
@@ -260,11 +264,48 @@ html, body {
   color: #D3D3D3;
 }
 
+.project-container {
+  left: 4300px;
+}
+
+.project-banner {
+  background-image: url('../images/projects-banner.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .project-frame-1-cont {
+  width: 300px !important;
+  height: 400px !important;
+  bottom: 30%;
+  left: 4900px;
+  z-index: 998;
+  position: relative;
+}
+
+.project-frame-1 {
+  background-image: url('../images/frame-1.png');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.project-content {
+  padding: 45px 50px;
+}
+
+.project-content h4 {
 
 }
 
+.project-content p {
 
+}
 
 
 /* ANIMATIONS */
@@ -287,7 +328,6 @@ html, body {
 
 @keyframes float {
   0%, 100% {
-    left: 2150px;
     bottom: 38%;
   }
 
