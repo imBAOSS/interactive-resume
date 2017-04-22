@@ -157,13 +157,29 @@ html, body {
   background-position: -145px -117px;
 }
 
+.exp-banner-container {
+  height: 300px !important;
+  width: 500px !important;
+  z-index: 998;
+  position: relative;
+}
+
+.exp-banner {
+  background-image: url('../images/experience-banner.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .g-banner-container {
   height: 500px !important;
   width: 350px !important;
   z-index: 998;
   position: relative;
   bottom: 100%;
-  left: 2500px;
+  left: 2700px;
 }
 
 .h-banner-container {
@@ -172,7 +188,7 @@ html, body {
   z-index: 998;
   position: relative;
   bottom: 100%;
-  left: 3000px;
+  left: 3100px;
 }
 
 .r-banner-container {
@@ -190,7 +206,7 @@ html, body {
   z-index: 998;
   position: relative;
   bottom: 100%;
-  left: 4000px;
+  left: 3900px;
 }
 
 .banner {
@@ -245,7 +261,7 @@ html, body {
 }
 
 .project-frame-1-cont {
-  
+
 }
 
 
@@ -267,4 +283,19 @@ html, body {
   animation-name: drop-down;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+
+@keyframes float {
+  0%, 100% {
+    left: 2150px;
+    bottom: 38%;
+  }
+
+  50% {
+    bottom: 37.5%;
+  }
+}
+
+.float {
+  animation: float 3s infinite;
 }
