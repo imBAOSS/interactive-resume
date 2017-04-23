@@ -9,6 +9,38 @@ html, body {
   overflow: auto;
 }
 
+/* Background */
+
+.content-wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.content {
+  top: 0;
+  left: 0;
+  height: 400%;
+  width: 1100%;
+  position: relative;
+}
+
+.content > div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.background {
+  background-image: url('../images/full-background.png');
+  top: 0%;
+  left: 0%;
+}
+
+/* Harry Container */
+
 .harry-container {
   height: 242px !important;
   width: 175px !important;
@@ -39,34 +71,7 @@ html, body {
   background-position: -775px -386px;
 }
 
-.content-wrapper {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
-
-.content {
-  top: 0;
-  left: 0;
-  height: 400%;
-  width: 1100%;
-  position: relative;
-}
-
-.content > div {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  /*background-position: center;*/
-}
-
-.background {
-  background-image: url('../images/full-background.png');
-  top: 0%;
-  left: 0%;
-}
+/* Housepoint Hourglass */
 
 .hourglass-container {
   bottom: 28.25%;
@@ -116,6 +121,8 @@ html, body {
   background-position: -1004px -40px;
 }
 
+/* Door Container */
+
 .door-container {
   height: 800px !important;
   width: 500px !important;
@@ -138,6 +145,8 @@ html, body {
   background-position: -128px -76px;
 }
 
+/* Knight Entity */
+
 .knight-container {
   height: 500px !important;
   width: 200px !important;
@@ -156,6 +165,8 @@ html, body {
   position: relative;
   background-position: -145px -117px;
 }
+
+/* Work Experience Banners */
 
 .banner-container {
   height: 300px !important;
@@ -267,6 +278,8 @@ html, body {
   left: 4300px;
 }
 
+/* Project Banner and Frames */
+
 .project-banner {
   background-image: url('../images/projects-banner.png');
   height: 100%;
@@ -277,9 +290,9 @@ html, body {
 }
 
 .project-frame-1-cont {
-  width: 300px !important;
+  width: 290px !important;
   height: 400px !important;
-  bottom: 30%;
+  bottom: 32%;
   left: 4900px;
   z-index: 998;
   position: relative;
