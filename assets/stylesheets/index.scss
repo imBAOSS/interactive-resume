@@ -342,7 +342,6 @@ ul, li, p {
 
 .portrait-1 {
   background-image: url('../images/portrait-1.png');
-  opacity: 0.8;
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -379,7 +378,6 @@ ul, li, p {
 
 .portrait-2 {
   background-image: url('../images/portrait-2.png');
-  opacity: 0.8;
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -416,7 +414,6 @@ ul, li, p {
 
 .portrait-3 {
   background-image: url('../images/portrait-3.png');
-  opacity: 0.8;
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -453,7 +450,6 @@ ul, li, p {
 
 .portrait-4 {
   background-image: url('../images/portrait-4.png');
-  opacity: 0.8;
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -490,7 +486,6 @@ ul, li, p {
 
 .portrait-5 {
   background-image: url('../images/portrait-5.png');
-  opacity: 0.8;
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -527,7 +522,6 @@ ul, li, p {
 
 .portrait-6 {
   background-image: url('../images/portrait-6.png');
-  opacity: 0.8;
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -564,12 +558,65 @@ ul, li, p {
 
 .portrait-7 {
   background-image: url('../images/portrait-7.png');
-  opacity: 0.8;
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
+}
+
+.project-frame-8-cont {
+  width: 290px !important;
+  height: 400px !important;
+  bottom: 32%;
+  left: 7200px;
+  z-index: 998;
+  position: relative;
+}
+
+.project-frame-8 {
+  background-image: url('../images/frame-1.png');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.portrait-8-cont {
+  height: 332px;
+  width: 208px;
+  top: 8.5%;
+  left: 38px;
+  z-index: 999;
+  position: relative;
+}
+
+.portrait-8 {
+  background-image: url('../images/portrait-8.png');
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.always-ribbon-cont {
+  height: 300px;
+  width: 436px;
+  top: -21.5%;
+  left: -82px;
+  z-index: 1000;
+  position: absolute;
+}
+
+.always-ribbon {
+  background-image: url('../images/always-ribbon.png');
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .project-content {
@@ -618,6 +665,20 @@ ul, li, p {
   animation: float 4s infinite;
 }
 
+@keyframes always-float {
+  0%, 100% {
+    top: -20.5%;
+  }
+
+  50% {
+    top: -22.5%;
+  }
+}
+
+.always-float {
+  animation: always-float 4s infinite;
+}
+
 @keyframes flash {
   0% {
     opacity: 1;
@@ -633,4 +694,19 @@ ul, li, p {
 
 .flash {
   animation: flash 3s infinite;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeout {
+  animation: fadeout 2s;
+  animation-fill-mode: forwards;
 }

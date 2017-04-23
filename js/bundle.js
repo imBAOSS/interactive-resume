@@ -200,7 +200,7 @@ $(document).ready(function() {
     let $harryLeft = $('.harry-container').position().left;
 
     triggerBannerAnimations($harryLeft);
-
+    triggerPortraitAnimations($harryLeft);
   }
 
   function triggerBannerAnimations(harryPosition) {
@@ -218,6 +218,12 @@ $(document).ready(function() {
 
     if (harryPosition > 3400) {
       $('.s-banner-container').addClass('drop-down')
+    }
+  }
+
+  function triggerPortraitAnimations(harryPosition) {
+    if (harryPosition > 4500) {
+      $('.portrait-1').addClass('fadeout')
     }
   }
 
