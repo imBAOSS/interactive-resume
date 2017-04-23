@@ -129,6 +129,25 @@ $(document).ready(function() {
 
     triggerBannerAnimations($harryLeft);
     triggerPortraitAnimations($harryLeft);
+    triggerSkill1Animations($harryLeft);
+  }
+
+  function triggerSkill1Animations(harryPosition) {
+    if (harryPosition > 8300) {
+      $('.skill-1').addClass('bounce-master')
+    }
+
+    if (harryPosition > 8400) {
+      $('.skill-2').addClass('bounce-expert')
+    }
+
+    if (harryPosition > 8500) {
+      $('.skill-3').addClass('bounce-master')
+    }
+
+    if (harryPosition > 8600) {
+      $('.skill-4').addClass('bounce-master')
+    }
   }
 
   function triggerBannerAnimations(harryPosition) {
