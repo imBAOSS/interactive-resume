@@ -1,3 +1,8 @@
+html, body, h1, h2, h3, h4, h5, h6, p, li, ul, div, span {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
 html, body {
   height: 100%;
   width: 100%;
@@ -6,30 +11,25 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  overflow: auto;
-}
+  overflow: auto; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Londrina Solid', cursive;
-}
+  font-family: 'Londrina Solid', cursive; }
 
 ul, li, p {
-  font-family: 'Patrick Hand SC', cursive;
-}
+  font-family: 'Patrick Hand SC', cursive; }
 
 /* Title */
 .title-container {
   min-width: 100vw;
   height: 100%;
-  z-index: 998;
-}
+  z-index: 998; }
 
 .title {
-  background-image: url('../images/title-page.png');
+  background-image: url("../images/title-page.png");
   height: 100%;
   width: 100%;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 /* Floor */
 .floor-container {
@@ -37,123 +37,102 @@ ul, li, p {
   width: 100%;
   top: 71.75%;
   right: 25%;
-  z-index: 998;
-}
+  z-index: 998; }
 
 .basement-container {
   height: 100%;
   width: 100%;
   top: 96.75%;
   left: 75%;
-  z-index: 998;
-}
+  z-index: 998; }
 
 .floor {
-  background-image: url('../images/castle-bricks-brown.png');
+  background-image: url("../images/castle-bricks-brown.png");
   background-size: 150px 150px;
   height: 100%;
-  width: 100%;
-}
+  width: 100%; }
 
 /* Background */
-
 .content-wrapper {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .content {
   top: 0;
   left: 0;
   height: 400%;
   width: 1100%;
-  position: relative;
-}
+  position: relative; }
 
 .content > div {
-  position: absolute;
-}
+  position: absolute; }
 
 .background {
-  background-image: url('../images/castle-dark-bricks-brown.png');
+  background-image: url("../images/castle-dark-bricks-brown.png");
   height: 100%;
   width: 100%;
   top: 0%;
   left: 0%;
-  background-size: 150px 150px;
-}
+  background-size: 150px 150px; }
 
 /* Down Arrow Key */
-
 .down-arrow-cont {
   height: 50px !important;
   width: 400px !important;
   top: 21%;
   left: 3.25%;
-  z-index: 999;
-}
+  z-index: 999; }
 
 .down-arrow {
-  background-image: url('../images/down-arrow-no-outline.png');
+  background-image: url("../images/down-arrow-no-outline.png");
   height: 100%;
   width: 100%;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 /* Housepoint Hourglass */
-
 .hourglass-container {
   bottom: 28.25%;
   left: 100px;
   height: 300px !important;
   width: 1500px !important;
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .hourglass-container > div {
   height: 100%;
   width: 500px;
   display: flex;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 .house-hourglass-cont {
   height: 300px;
   width: 200px;
   z-index: 998;
-  position: relative;
-}
+  position: relative; }
 
 .house-hourglass {
-  background-image: url('../images/housepoints.png');
+  background-image: url("../images/housepoints.png");
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-repeat: no-repeat;
-  position: relative;
-}
+  position: relative; }
 
 .gryffindor {
-  background-position: -95px -40px;
-}
+  background-position: -95px -40px; }
 
 .hufflepuff {
-  background-position: -403px -40px;
-}
+  background-position: -403px -40px; }
 
 .ravenclaw {
-  background-position: -697px -40px;
-}
+  background-position: -697px -40px; }
 
 .slytherin {
-  background-position: -1004px -40px;
-}
+  background-position: -1004px -40px; }
 
 /* Door Container */
-
 .door-container {
   height: 800px !important;
   width: 500px !important;
@@ -162,62 +141,52 @@ ul, li, p {
   bottom: 28.25%;
   left: 600px;
   display: flex;
-  justify-content: center;
-}
-
+  justify-content: center; }
 
 .door {
-  background-image: url('../images/door.png');
+  background-image: url("../images/door.png");
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-repeat: no-repeat;
   position: relative;
-  background-position: -128px -76px;
-}
+  background-position: -128px -76px; }
 
 /* Knight Entity */
-
 .knight-container {
   height: 500px !important;
   width: 200px !important;
   z-index: 998;
   position: relative;
   bottom: 28.25%;
-  left: 1900px;
-}
+  left: 1900px; }
 
 .knight {
-  background-image: url('../images/knight.png');
+  background-image: url("../images/knight.png");
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-repeat: no-repeat;
   position: relative;
-  background-position: -145px -117px;
-}
+  background-position: -145px -117px; }
 
 /* Work Experience Banners */
-
 .banner-container {
   height: 300px !important;
   width: 500px !important;
   z-index: 998;
-  position: relative;
-}
+  position: relative; }
 
 .exp-container {
-  left: 2150px;
-}
+  left: 2150px; }
 
 .exp-banner {
-  background-image: url('../images/experience-banner.png');
+  background-image: url("../images/experience-banner.png");
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-repeat: no-repeat;
-  position: relative;
-}
+  position: relative; }
 
 .g-banner-container {
   height: 500px !important;
@@ -225,8 +194,7 @@ ul, li, p {
   z-index: 998;
   position: relative;
   bottom: 100%;
-  left: 2700px;
-}
+  left: 2700px; }
 
 .h-banner-container {
   height: 500px !important;
@@ -234,8 +202,7 @@ ul, li, p {
   z-index: 998;
   position: relative;
   bottom: 100%;
-  left: 3100px;
-}
+  left: 3100px; }
 
 .r-banner-container {
   height: 500px !important;
@@ -243,8 +210,7 @@ ul, li, p {
   z-index: 998;
   position: relative;
   bottom: 100%;
-  left: 3500px;
-}
+  left: 3500px; }
 
 .s-banner-container {
   height: 500px !important;
@@ -252,72 +218,57 @@ ul, li, p {
   z-index: 998;
   position: relative;
   bottom: 100%;
-  left: 3900px;
-}
+  left: 3900px; }
 
 .banner {
-  background-image: url('../images/banners.png');
+  background-image: url("../images/banners.png");
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-repeat: no-repeat;
-  position: relative;
-}
+  position: relative; }
 
 .gryffindor-banner {
-  background-position: -55px 0px;
-}
+  background-position: -55px 0px; }
 
 .hufflepuff-banner {
-  background-position: -432px 0px;
-}
+  background-position: -432px 0px; }
 
 .ravenclaw-banner {
-  background-position: -812px 0px;
-}
+  background-position: -812px 0px; }
 
 .slytherin-banner {
-  background-position: -1181px 0px;
-}
+  background-position: -1181px 0px; }
 
 .work-exp {
-  margin: 100px 50px;
-}
+  margin: 100px 50px; }
 
 .work-exp ul {
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 .one-1 {
-  color: orange;
-}
+  color: orange; }
 
 .one-2 {
-  color: black;
-}
+  color: black; }
 
 .two-1 {
-  color: #C9AE87;
-}
+  color: #C9AE87; }
 
 .two-2 {
-  color: #D3D3D3;
-}
+  color: #D3D3D3; }
 
 /* Project Banner and Frames */
-
 .project-container {
-  left: 4300px;
-}
+  left: 4300px; }
 
 .project-banner {
-  background-image: url('../images/projects-banner.png');
+  background-image: url("../images/projects-banner.png");
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-repeat: no-repeat;
-  position: relative;
-}
+  position: relative; }
 
 .project-frame-1-cont {
   width: 290px !important;
@@ -325,17 +276,15 @@ ul, li, p {
   bottom: 32%;
   left: 4900px;
   z-index: 998;
-  position: relative;
-}
+  position: relative; }
 
 .project-frame-1 {
-  background-image: url('../images/frame-1.png');
+  background-image: url("../images/frame-1.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
-}
+  position: absolute; }
 
 .portrait-1-cont {
   height: 332px;
@@ -343,17 +292,15 @@ ul, li, p {
   bottom: 83.5%;
   left: 38px;
   z-index: 999;
-  position: relative;
-}
+  position: relative; }
 
 .portrait-1 {
-  background-image: url('../images/portrait-1.png');
+  background-image: url("../images/portrait-1.png");
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-}
+  position: absolute; }
 
 .project-frame-2-cont {
   width: 600px !important;
@@ -361,17 +308,15 @@ ul, li, p {
   bottom: 32.5%;
   left: 5400px;
   z-index: 998;
-  position: relative;
-}
+  position: relative; }
 
 .project-frame-2 {
-  background-image: url('../images/frame-2.png');
+  background-image: url("../images/frame-2.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
-}
+  position: absolute; }
 
 .portrait-2-cont {
   height: 130px;
@@ -379,17 +324,15 @@ ul, li, p {
   top: 20.5%;
   left: 101px;
   z-index: 999;
-  position: relative;
-}
+  position: relative; }
 
 .portrait-2 {
-  background-image: url('../images/portrait-2.png');
+  background-image: url("../images/portrait-2.png");
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-}
+  position: absolute; }
 
 .project-frame-3-cont {
   width: 600px !important;
@@ -397,17 +340,15 @@ ul, li, p {
   bottom: 25%;
   left: 5200px;
   z-index: 998;
-  position: relative;
-}
+  position: relative; }
 
 .project-frame-3 {
-  background-image: url('../images/frame-2.png');
+  background-image: url("../images/frame-2.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
-}
+  position: absolute; }
 
 .portrait-3-cont {
   height: 130px;
@@ -415,17 +356,15 @@ ul, li, p {
   top: 20.45%;
   left: 101px;
   z-index: 999;
-  position: relative;
-}
+  position: relative; }
 
 .portrait-3 {
-  background-image: url('../images/portrait-3.png');
+  background-image: url("../images/portrait-3.png");
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-}
+  position: absolute; }
 
 .project-frame-4-cont {
   width: 290px !important;
@@ -433,17 +372,15 @@ ul, li, p {
   bottom: 32%;
   left: 6000px;
   z-index: 998;
-  position: relative;
-}
+  position: relative; }
 
 .project-frame-4 {
-  background-image: url('../images/frame-1.png');
+  background-image: url("../images/frame-1.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
-}
+  position: absolute; }
 
 .portrait-4-cont {
   height: 332px;
@@ -451,17 +388,15 @@ ul, li, p {
   top: 8.5%;
   left: 38px;
   z-index: 999;
-  position: relative;
-}
+  position: relative; }
 
 .portrait-4 {
-  background-image: url('../images/portrait-4.png');
+  background-image: url("../images/portrait-4.png");
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-}
+  position: absolute; }
 
 .project-frame-5-cont {
   width: 600px !important;
@@ -469,17 +404,15 @@ ul, li, p {
   bottom: 35%;
   left: 6300px;
   z-index: 998;
-  position: relative;
-}
+  position: relative; }
 
 .project-frame-5 {
-  background-image: url('../images/frame-2.png');
+  background-image: url("../images/frame-2.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
-}
+  position: absolute; }
 
 .portrait-5-cont {
   height: 130px;
@@ -487,17 +420,15 @@ ul, li, p {
   top: 20.5%;
   left: 101px;
   z-index: 999;
-  position: relative;
-}
+  position: relative; }
 
 .portrait-5 {
-  background-image: url('../images/portrait-5.png');
+  background-image: url("../images/portrait-5.png");
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-}
+  position: absolute; }
 
 .project-frame-6-cont {
   width: 600px !important;
@@ -505,17 +436,15 @@ ul, li, p {
   bottom: 29%;
   left: 6450px;
   z-index: 998;
-  position: relative;
-}
+  position: relative; }
 
 .project-frame-6 {
-  background-image: url('../images/frame-2.png');
+  background-image: url("../images/frame-2.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
-}
+  position: absolute; }
 
 .portrait-6-cont {
   height: 130px;
@@ -523,17 +452,15 @@ ul, li, p {
   top: 20.5%;
   left: 101px;
   z-index: 999;
-  position: relative;
-}
+  position: relative; }
 
 .portrait-6 {
-  background-image: url('../images/portrait-6.png');
+  background-image: url("../images/portrait-6.png");
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-}
+  position: absolute; }
 
 .project-frame-7-cont {
   width: 600px !important;
@@ -541,17 +468,15 @@ ul, li, p {
   bottom: 23%;
   left: 6600px;
   z-index: 998;
-  position: relative;
-}
+  position: relative; }
 
 .project-frame-7 {
-  background-image: url('../images/frame-2.png');
+  background-image: url("../images/frame-2.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
-}
+  position: absolute; }
 
 .portrait-7-cont {
   height: 131px;
@@ -559,17 +484,15 @@ ul, li, p {
   top: 20.25%;
   left: 101px;
   z-index: 999;
-  position: relative;
-}
+  position: relative; }
 
 .portrait-7 {
-  background-image: url('../images/portrait-7.png');
+  background-image: url("../images/portrait-7.png");
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-}
+  position: absolute; }
 
 .project-frame-8-cont {
   width: 290px !important;
@@ -577,17 +500,15 @@ ul, li, p {
   bottom: 32%;
   left: 7200px;
   z-index: 998;
-  position: relative;
-}
+  position: relative; }
 
 .project-frame-8 {
-  background-image: url('../images/frame-1.png');
+  background-image: url("../images/frame-1.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
-}
+  position: absolute; }
 
 .portrait-8-cont {
   height: 332px;
@@ -595,17 +516,15 @@ ul, li, p {
   top: 8.5%;
   left: 38px;
   z-index: 999;
-  position: relative;
-}
+  position: relative; }
 
 .portrait-8 {
-  background-image: url('../images/portrait-8.png');
+  background-image: url("../images/portrait-8.png");
   min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-}
+  position: absolute; }
 
 .always-ribbon-cont {
   height: 300px;
@@ -613,421 +532,332 @@ ul, li, p {
   top: -21.5%;
   left: -82px;
   z-index: 1000;
-  position: absolute;
-}
+  position: absolute; }
 
 .always-ribbon {
-  background-image: url('../images/always-ribbon.png');
+  background-image: url("../images/always-ribbon.png");
   opacity: 1;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .project-content {
-  padding: 45px 50px;
-}
+  padding: 45px 50px; }
 
 .project-content h4 {
-  font-size: 30px;
-}
+  font-size: 30px; }
 
 .project-content p {
   font-family: 'Patrick Hand SC', cursive;
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 /* Skills Banner and Container */
-
 .skills-container {
-  left: 7700px;
-}
+  left: 7700px; }
 
 .skills-banner {
-  background-image: url('../images/skills-banner.png');
+  background-image: url("../images/skills-banner.png");
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-repeat: no-repeat;
-  position: relative;
-}
+  position: relative; }
 
 .outer-skills-container {
   height: 600px !important;
   width: 1000px !important;
-  z-index: 998;
-}
+  z-index: 998; }
 
 .skills-set-container {
   height: 600px !important;
   width: 1000px !important;
   z-index: 998;
   position: relative;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .skills-set-1 {
   left: 8400px;
-  bottom: 28.25%;
-}
+  bottom: 28.25%; }
 
 .skills-1-banner-container {
   height: 300px !important;
-  width:  500px !important;
+  width: 500px !important;
   left: 250px;
   position: absolute;
-  z-index: 999;
-}
+  z-index: 999; }
 
 .skills-1-banner {
-  background-image: url('../images/scripting-language-banner.png');
+  background-image: url("../images/scripting-language-banner.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: relative;
-}
+  position: relative; }
 
 .skill-name-cont {
   height: 200px !important;
   width: 300px !important;
   top: -5%;
   position: absolute;
-  z-index: 998;
-}
+  z-index: 998; }
 
 .skill-1-banner {
-  background-image: url('../images/ruby-banner.png');
+  background-image: url("../images/ruby-banner.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: relative;
-}
+  position: relative; }
 
 .skill-name-1 {
-  left: 12%;
-}
+  left: 12%; }
 
 .skill-2-banner {
-  background-image: url('../images/sql-banner.png');
+  background-image: url("../images/sql-banner.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: relative;
-}
+  position: relative; }
 
 .skill-name-2 {
-  left: 32%;
-}
+  left: 32%; }
 
 .skill-3-banner {
-  background-image: url('../images/javascript-banner.png');
+  background-image: url("../images/javascript-banner.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: relative;
-}
+  position: relative; }
 
 .skill-name-3 {
-  left: 52%;
-}
+  left: 52%; }
 
 .skill-4-banner {
-  background-image: url('../images/html-css-banner.png');
+  background-image: url("../images/html-css-banner.png");
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: relative;
-}
+  position: relative; }
 
 .skill-name-4 {
-  left: 72%;
-}
+  left: 72%; }
 
 .line {
   width: 100%;
   height: 3px;
   background-color: white;
-  position: absolute;
-}
+  position: absolute; }
 
 .master-line {
-  bottom: 80%;
-}
+  bottom: 80%; }
 
 .expert-line {
-  bottom: 65%;
-}
+  bottom: 65%; }
 
 .proficient-line {
-  bottom: 50%;
-}
+  bottom: 50%; }
 
 .familiar-line {
-  bottom: 35%;
-}
+  bottom: 35%; }
 
 .beginner-line {
-  bottom: 20%;
-}
+  bottom: 20%; }
 
 .text {
   font-family: 'Londrina Solid', cursive;
   font-size: 30px;
   color: white;
-  position: absolute;
-}
+  position: absolute; }
 
 .master-text {
-  bottom: 80%;
-}
+  bottom: 80%; }
 
 .expert-text {
-  bottom: 65%;
-}
+  bottom: 65%; }
 
 .proficient-text {
-  bottom: 50%;
-}
+  bottom: 50%; }
 
 .familiar-text {
-  bottom: 35%;
-}
+  bottom: 35%; }
 
 .beginner-text {
-  bottom: 20%;
-}
+  bottom: 20%; }
 
 .skills-hoop-container {
   width: 250px;
   height: 600px;
   top: 100%;
-  position: absolute;
-}
+  position: absolute; }
 
 .skills-hoop {
-  background-image: url('../images/hoops.png');
+  background-image: url("../images/hoops.png");
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
-}
+  background-size: contain; }
 
 .skill-1 {
-  left: 15%
-}
+  left: 15%; }
 
 .skill-2 {
-  left: 35%;
-}
+  left: 35%; }
 
 .skill-3 {
-  left: 55%;
-}
+  left: 55%; }
 
 .skill-4 {
-  left: 75%;
-}
+  left: 75%; }
 
 /* Fluffy */
-
 .fluffy-container {
   height: 1000px !important;
   width: 1500px !important;
   left: 9500px;
   bottom: 18.85%;
-  z-index: 998;
-}
+  z-index: 998; }
 
 .fluffy {
-  background-image: url('../images/fluffy-main.png');
+  background-image: url("../images/fluffy-main.png");
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 998;
-  position: absolute;
-}
+  position: absolute; }
 
 .fluffy-body {
-  background-image: url('../images/fluffy-body.png');
+  background-image: url("../images/fluffy-body.png");
   z-index: 997;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-  position: absolute;
-}
+  position: absolute; }
 
 /* ANIMATIONS */
-
 @keyframes breathe {
   0%, 100% {
-    top: 0%;
-  }
-
+    top: 0%; }
   50% {
-    top: 2%;
-  }
-}
-
+    top: 2%; } }
 .breathe {
-  animation: breathe 4s infinite;
-}
+  animation: breathe 4s infinite; }
 
 @keyframes bounce-master {
   0%, 60% {
-    top: 100%;
-  }
-
+    top: 100%; }
   75% {
-    top: 5%;
-  }
-
+    top: 5%; }
   90% {
-    top: 25%;
-  }
-
+    top: 25%; }
   95% {
-    top: 10%;
-  }
-
+    top: 10%; }
   97% {
-    top: 20%;
-  }
-
+    top: 20%; }
   100% {
-    top: 15%;
-  }
-}
-
+    top: 15%; } }
 .bounce-master {
   animation: bounce-master 1s;
-  animation-fill-mode: forwards;
-}
+  animation-fill-mode: forwards; }
 
 @keyframes bounce-expert {
   0%, 60% {
-    top: 100%;
-  }
-
+    top: 100%; }
   75% {
-    top: 20%;
-  }
-
+    top: 20%; }
   90% {
-    top: 40%;
-  }
-
+    top: 40%; }
   95% {
-    top: 25%;
-  }
-
+    top: 25%; }
   97% {
-    top: 35%;
-  }
-
+    top: 35%; }
   100% {
-    top: 30%;
-  }
-}
-
+    top: 30%; } }
 .bounce-expert {
   animation: bounce-expert 1s;
-  animation-fill-mode: forwards;
-}
+  animation-fill-mode: forwards; }
 
 @keyframes drop-down {
   0% {
-    bottom: 100%;
-  }
-
+    bottom: 100%; }
   100% {
-    bottom: 33%;
-  }
-}
-
+    bottom: 33%; } }
 .drop-down {
   animation-name: drop-down;
   animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
+  animation-fill-mode: forwards; }
 
 @keyframes float {
   0%, 100% {
-    bottom: 38%;
-  }
-
+    bottom: 38%; }
   50% {
-    bottom: 37.5%;
-  }
-}
-
+    bottom: 37.5%; } }
 .float {
-  animation: float 4s infinite;
-}
+  animation: float 4s infinite; }
 
 @keyframes always-float {
   0%, 100% {
-    top: -20.5%;
-  }
-
+    top: -20.5%; }
   50% {
-    top: -22.5%;
-  }
-}
-
+    top: -22.5%; } }
 .always-float {
-  animation: always-float 4s infinite;
-}
+  animation: always-float 4s infinite; }
 
 @keyframes flash {
   0% {
-    opacity: 1;
-  }
+    opacity: 1; }
   50% {
-    opacity: 1;
-  }
-
+    opacity: 1; }
   100% {
-    opacity: 0;
-  }
-}
-
+    opacity: 0; } }
 .flash {
-  animation: flash 3s infinite;
-}
+  animation: flash 3s infinite; }
 
 @keyframes fadeout {
   0% {
-    opacity: 1;
-  }
-
+    opacity: 1; }
   100% {
-    opacity: 0;
-  }
-}
-
+    opacity: 0; } }
 .fadeout {
   animation: fadeout 2s;
-  animation-fill-mode: forwards;
-}
+  animation-fill-mode: forwards; }
 
 @keyframes skills-float-1 {
   0%, 100% {
-    top: -20%;
-  }
-
+    top: -20%; }
   50% {
-    top: -18%;
-  }
-}
-
+    top: -18%; } }
 .skills-float-1 {
-  animation: skills-float-1 3s infinite;
-}
+  animation: skills-float-1 3s infinite; }
+
+.harry-container {
+  height: 242px !important;
+  width: 175px !important;
+  position: fixed;
+  top: auto;
+  bottom: 28.25%;
+  left: 300px;
+  z-index: 999; }
+
+.harry {
+  background-image: url("../images/harry-sprites.png");
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat; }
+
+.face-right {
+  background-position: -595px -386px; }
+
+.walk-face-right-1 {
+  background-position: -415px -386px; }
+
+.walk-face-right-2 {
+  background-position: -775px -386px; }
+
+/*# sourceMappingURL=main.css.map */

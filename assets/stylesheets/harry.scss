@@ -1,0 +1,29 @@
+.harry-container {
+  height: 242px !important;
+  width: 175px !important;
+  position: fixed;
+  top: auto;
+  bottom: 28.25%;
+  left: 300px;
+  z-index: 999;
+}
+
+.harry {
+  background-image: url('../images/harry-sprites.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.face-right {
+  background-position: -595px -386px;
+}
+
+.walk-face-right-1 {
+  background-position: -415px -386px;
+}
+
+.walk-face-right-2 {
+  background-position: -775px -386px;
+}
