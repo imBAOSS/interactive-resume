@@ -14,14 +14,14 @@
 }
 
 .outer-skills-container {
-  height: 600px !important;
-  width: 1000px !important;
+  height: 600px;
+  width: 1000px;
   z-index: 998;
 }
 
 .skills-set-container {
-  height: 600px !important;
-  width: 1000px !important;
+  height: 600px;
+  width: 1000px;
   z-index: 998;
   position: relative;
   overflow: hidden;
@@ -33,8 +33,8 @@
 }
 
 .skills-1-banner-container {
-  height: 300px !important;
-  width:  500px !important;
+  height: 300px;
+  width:  500px;
   left: 250px;
   position: absolute;
   z-index: 999;
@@ -50,8 +50,8 @@
 }
 
 .skill-name-cont {
-  height: 200px !important;
-  width: 300px !important;
+  height: 200px;
+  width: 300px;
   top: -5%;
   position: absolute;
   z-index: 998;

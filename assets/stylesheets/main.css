@@ -174,13 +174,13 @@ ul, li, p {
   position: relative; }
 
 .outer-skills-container {
-  height: 600px !important;
-  width: 1000px !important;
+  height: 600px;
+  width: 1000px;
   z-index: 998; }
 
 .skills-set-container {
-  height: 600px !important;
-  width: 1000px !important;
+  height: 600px;
+  width: 1000px;
   z-index: 998;
   position: relative;
   overflow: hidden; }
@@ -190,8 +190,8 @@ ul, li, p {
   bottom: 28.25%; }
 
 .skills-1-banner-container {
-  height: 300px !important;
-  width: 500px !important;
+  height: 300px;
+  width: 500px;
   left: 250px;
   position: absolute;
   z-index: 999; }
@@ -205,8 +205,8 @@ ul, li, p {
   position: relative; }
 
 .skill-name-cont {
-  height: 200px !important;
-  width: 300px !important;
+  height: 200px;
+  width: 300px;
   top: -5%;
   position: absolute;
   z-index: 998; }
@@ -336,8 +336,8 @@ ul, li, p {
 
 /* Down Arrow Key */
 .down-arrow-cont {
-  height: 50px !important;
-  width: 400px !important;
+  height: 50px;
+  width: 400px;
   top: 21%;
   left: 3.25%;
   z-index: 999; }
@@ -349,8 +349,8 @@ ul, li, p {
   background-repeat: no-repeat; }
 
 .harry-container {
-  height: 242px !important;
-  width: 175px !important;
+  height: 242px;
+  width: 175px;
   position: fixed;
   top: auto;
   bottom: 28.25%;
@@ -376,8 +376,8 @@ ul, li, p {
 .hourglass-container {
   bottom: 28.25%;
   left: 100px;
-  height: 300px !important;
-  width: 1500px !important;
+  height: 300px;
+  width: 1500px;
   display: flex;
   justify-content: space-between; }
 
@@ -414,8 +414,8 @@ ul, li, p {
   background-position: -1004px -40px; }
 
 .door-container {
-  height: 800px !important;
-  width: 500px !important;
+  height: 800px;
+  width: 500px;
   z-index: 998;
   position: relative;
   bottom: 28.25%;
@@ -434,8 +434,8 @@ ul, li, p {
 
 /* Knight Entity */
 .knight-container {
-  height: 500px !important;
-  width: 200px !important;
+  height: 500px;
+  width: 200px;
   z-index: 998;
   position: relative;
   bottom: 28.25%;
@@ -452,8 +452,8 @@ ul, li, p {
 
 /* Work Experience Banners */
 .banner-container {
-  height: 300px !important;
-  width: 500px !important;
+  height: 300px;
+  width: 500px;
   z-index: 998;
   position: relative; }
 
@@ -469,32 +469,32 @@ ul, li, p {
   position: relative; }
 
 .g-banner-container {
-  height: 500px !important;
-  width: 350px !important;
+  height: 500px;
+  width: 350px;
   z-index: 998;
   position: relative;
   bottom: 100%;
   left: 2700px; }
 
 .h-banner-container {
-  height: 500px !important;
-  width: 350px !important;
+  height: 500px;
+  width: 350px;
   z-index: 998;
   position: relative;
   bottom: 100%;
   left: 3100px; }
 
 .r-banner-container {
-  height: 500px !important;
-  width: 350px !important;
+  height: 500px;
+  width: 350px;
   z-index: 998;
   position: relative;
   bottom: 100%;
   left: 3500px; }
 
 .s-banner-container {
-  height: 500px !important;
-  width: 350px !important;
+  height: 500px;
+  width: 350px;
   z-index: 998;
   position: relative;
   bottom: 100%;
@@ -551,8 +551,8 @@ ul, li, p {
   position: relative; }
 
 .project-frame-1-cont {
-  width: 290px !important;
-  height: 400px !important;
+  width: 290px;
+  height: 400px;
   bottom: 32%;
   left: 4900px;
   z-index: 998;
@@ -583,8 +583,8 @@ ul, li, p {
   position: absolute; }
 
 .project-frame-2-cont {
-  width: 600px !important;
-  height: 450px !important;
+  width: 600px;
+  height: 450px;
   bottom: 32.5%;
   left: 5400px;
   z-index: 998;
@@ -615,8 +615,8 @@ ul, li, p {
   position: absolute; }
 
 .project-frame-3-cont {
-  width: 600px !important;
-  height: 450px !important;
+  width: 600px;
+  height: 450px;
   bottom: 25%;
   left: 5200px;
   z-index: 998;
@@ -647,8 +647,8 @@ ul, li, p {
   position: absolute; }
 
 .project-frame-4-cont {
-  width: 290px !important;
-  height: 400px !important;
+  width: 290px;
+  height: 400px;
   bottom: 32%;
   left: 6000px;
   z-index: 998;
@@ -679,8 +679,8 @@ ul, li, p {
   position: absolute; }
 
 .project-frame-5-cont {
-  width: 600px !important;
-  height: 450px !important;
+  width: 600px;
+  height: 450px;
   bottom: 35%;
   left: 6300px;
   z-index: 998;
@@ -711,8 +711,8 @@ ul, li, p {
   position: absolute; }
 
 .project-frame-6-cont {
-  width: 600px !important;
-  height: 450px !important;
+  width: 600px;
+  height: 450px;
   bottom: 29%;
   left: 6450px;
   z-index: 998;
@@ -743,8 +743,8 @@ ul, li, p {
   position: absolute; }
 
 .project-frame-7-cont {
-  width: 600px !important;
-  height: 450px !important;
+  width: 600px;
+  height: 450px;
   bottom: 23%;
   left: 6600px;
   z-index: 998;
@@ -775,8 +775,8 @@ ul, li, p {
   position: absolute; }
 
 .project-frame-8-cont {
-  width: 290px !important;
-  height: 400px !important;
+  width: 290px;
+  height: 400px;
   bottom: 32%;
   left: 7200px;
   z-index: 998;
@@ -834,8 +834,8 @@ ul, li, p {
 
 /* Fluffy */
 .fluffy-container {
-  height: 1000px !important;
-  width: 1500px !important;
+  height: 1000px;
+  width: 1500px;
   left: 9500px;
   bottom: 18.85%;
   z-index: 998; }
