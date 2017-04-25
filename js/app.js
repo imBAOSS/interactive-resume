@@ -133,19 +133,19 @@ $(document).ready(function() {
   }
 
   function triggerSkill1Animations(harryPosition) {
-    if (harryPosition > 8300) {
+    if (harryPosition > 8100) {
       $('.skill-1').addClass('bounce-master')
     }
 
-    if (harryPosition > 8400) {
+    if (harryPosition > 8200) {
       $('.skill-2').addClass('bounce-expert')
     }
 
-    if (harryPosition > 8500) {
+    if (harryPosition > 8300) {
       $('.skill-3').addClass('bounce-master')
     }
 
-    if (harryPosition > 8600) {
+    if (harryPosition > 8400) {
       $('.skill-4').addClass('bounce-master')
     }
   }

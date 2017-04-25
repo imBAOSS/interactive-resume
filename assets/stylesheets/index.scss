@@ -28,13 +28,23 @@ ul, li, p {
   background-image: url('../images/title-page.png');
   height: 100%;
   width: 100%;
+  background-repeat: no-repeat;
 }
 
 /* Floor */
 .floor-container {
   height: 100%;
-  width: 82%;
+  width: 100%;
   top: 71.75%;
+  right: 25%;
+  z-index: 998;
+}
+
+.basement-container {
+  height: 100%;
+  width: 100%;
+  top: 96.75%;
+  left: 75%;
   z-index: 998;
 }
 
@@ -435,7 +445,7 @@ ul, li, p {
 .portrait-3-cont {
   height: 130px;
   width: 390px;
-  top: 20.5%;
+  top: 20.45%;
   left: 101px;
   z-index: 999;
   position: relative;
@@ -691,7 +701,7 @@ ul, li, p {
 }
 
 .skills-set-1 {
-  left: 8500px;
+  left: 8400px;
   bottom: 28.25%;
 }
 
@@ -771,8 +781,6 @@ ul, li, p {
 .skill-name-4 {
   left: 72%;
 }
-
-
 
 .line {
   width: 100%;
@@ -859,7 +867,51 @@ ul, li, p {
   left: 75%;
 }
 
+/* Fluffy */
+
+.fluffy-container {
+  height: 1000px !important;
+  width: 1500px !important;
+  left: 9500px;
+  bottom: 18.85%;
+  z-index: 998;
+}
+
+.fluffy {
+  background-image: url('../images/fluffy-main.png');
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 998;
+  position: absolute;
+}
+
+.fluffy-body {
+  background-image: url('../images/fluffy-body.png');
+  z-index: 997;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
 /* ANIMATIONS */
+
+@keyframes breathe {
+  0%, 100% {
+    top: 0%;
+  }
+
+  50% {
+    top: 2%;
+  }
+}
+
+.breathe {
+  animation: breathe 4s infinite;
+}
 
 @keyframes bounce-master {
   0%, 60% {
