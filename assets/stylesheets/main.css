@@ -19,18 +19,6 @@ h1, h2, h3, h4, h5, h6 {
 ul, li, p {
   font-family: 'Patrick Hand SC', cursive; }
 
-/* Title */
-.title-container {
-  min-width: 100vw;
-  height: 100%;
-  z-index: 998; }
-
-.title {
-  background-image: url("../images/title-page.png");
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat; }
-
 /* Floor */
 .floor-container {
   height: 100%;
@@ -77,6 +65,275 @@ ul, li, p {
   left: 0%;
   background-size: 150px 150px; }
 
+/* ANIMATIONS */
+@keyframes breathe {
+  0%, 100% {
+    top: 0%; }
+  50% {
+    top: 2%; } }
+.breathe {
+  animation: breathe 4s infinite; }
+
+@keyframes bounce-master {
+  0%, 60% {
+    top: 100%; }
+  75% {
+    top: 5%; }
+  90% {
+    top: 25%; }
+  95% {
+    top: 10%; }
+  97% {
+    top: 20%; }
+  100% {
+    top: 15%; } }
+.bounce-master {
+  animation: bounce-master 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes bounce-expert {
+  0%, 60% {
+    top: 100%; }
+  75% {
+    top: 20%; }
+  90% {
+    top: 40%; }
+  95% {
+    top: 25%; }
+  97% {
+    top: 35%; }
+  100% {
+    top: 30%; } }
+.bounce-expert {
+  animation: bounce-expert 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes drop-down {
+  0% {
+    bottom: 100%; }
+  100% {
+    bottom: 33%; } }
+.drop-down {
+  animation-name: drop-down;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes float {
+  0%, 100% {
+    bottom: 38%; }
+  50% {
+    bottom: 37.5%; } }
+.float {
+  animation: float 4s infinite; }
+
+@keyframes always-float {
+  0%, 100% {
+    top: -20.5%; }
+  50% {
+    top: -22.5%; } }
+.always-float {
+  animation: always-float 4s infinite; }
+
+@keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.flash {
+  animation: flash 3s infinite; }
+
+@keyframes fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.fadeout {
+  animation: fadeout 2s;
+  animation-fill-mode: forwards; }
+
+@keyframes skills-float-1 {
+  0%, 100% {
+    top: -20%; }
+  50% {
+    top: -18%; } }
+.skills-float-1 {
+  animation: skills-float-1 3s infinite; }
+
+/* Skills Banner and Container */
+.skills-container {
+  left: 7700px; }
+
+.skills-banner {
+  background-image: url("../images/skills-banner.png");
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.outer-skills-container {
+  height: 600px !important;
+  width: 1000px !important;
+  z-index: 998; }
+
+.skills-set-container {
+  height: 600px !important;
+  width: 1000px !important;
+  z-index: 998;
+  position: relative;
+  overflow: hidden; }
+
+.skills-set-1 {
+  left: 8400px;
+  bottom: 28.25%; }
+
+.skills-1-banner-container {
+  height: 300px !important;
+  width: 500px !important;
+  left: 250px;
+  position: absolute;
+  z-index: 999; }
+
+.skills-1-banner {
+  background-image: url("../images/scripting-language-banner.png");
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.skill-name-cont {
+  height: 200px !important;
+  width: 300px !important;
+  top: -5%;
+  position: absolute;
+  z-index: 998; }
+
+.skill-1-banner {
+  background-image: url("../images/ruby-banner.png");
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.skill-name-1 {
+  left: 12%; }
+
+.skill-2-banner {
+  background-image: url("../images/sql-banner.png");
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.skill-name-2 {
+  left: 32%; }
+
+.skill-3-banner {
+  background-image: url("../images/javascript-banner.png");
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.skill-name-3 {
+  left: 52%; }
+
+.skill-4-banner {
+  background-image: url("../images/html-css-banner.png");
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.skill-name-4 {
+  left: 72%; }
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  position: absolute; }
+
+.master-line {
+  bottom: 80%; }
+
+.expert-line {
+  bottom: 65%; }
+
+.proficient-line {
+  bottom: 50%; }
+
+.familiar-line {
+  bottom: 35%; }
+
+.beginner-line {
+  bottom: 20%; }
+
+.text {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 30px;
+  color: white;
+  position: absolute; }
+
+.master-text {
+  bottom: 80%; }
+
+.expert-text {
+  bottom: 65%; }
+
+.proficient-text {
+  bottom: 50%; }
+
+.familiar-text {
+  bottom: 35%; }
+
+.beginner-text {
+  bottom: 20%; }
+
+.skills-hoop-container {
+  width: 250px;
+  height: 600px;
+  top: 100%;
+  position: absolute; }
+
+.skills-hoop {
+  background-image: url("../images/hoops.png");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.skill-1 {
+  left: 15%; }
+
+.skill-2 {
+  left: 35%; }
+
+.skill-3 {
+  left: 55%; }
+
+.skill-4 {
+  left: 75%; }
+
+/* Title */
+.title-container {
+  min-width: 100vw;
+  height: 100%;
+  z-index: 998; }
+
+.title {
+  background-image: url("../images/title-page.png");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat; }
+
 /* Down Arrow Key */
 .down-arrow-cont {
   height: 50px !important;
@@ -91,7 +348,31 @@ ul, li, p {
   width: 100%;
   background-repeat: no-repeat; }
 
-/* Housepoint Hourglass */
+.harry-container {
+  height: 242px !important;
+  width: 175px !important;
+  position: fixed;
+  top: auto;
+  bottom: 28.25%;
+  left: 300px;
+  z-index: 999; }
+
+.harry {
+  background-image: url("../images/harry-sprites.png");
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat; }
+
+.face-right {
+  background-position: -595px -386px; }
+
+.walk-face-right-1 {
+  background-position: -415px -386px; }
+
+.walk-face-right-2 {
+  background-position: -775px -386px; }
+
 .hourglass-container {
   bottom: 28.25%;
   left: 100px;
@@ -132,7 +413,6 @@ ul, li, p {
 .slytherin {
   background-position: -1004px -40px; }
 
-/* Door Container */
 .door-container {
   height: 800px !important;
   width: 500px !important;
@@ -552,167 +832,6 @@ ul, li, p {
   font-family: 'Patrick Hand SC', cursive;
   font-size: 20px; }
 
-/* Skills Banner and Container */
-.skills-container {
-  left: 7700px; }
-
-.skills-banner {
-  background-image: url("../images/skills-banner.png");
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  position: relative; }
-
-.outer-skills-container {
-  height: 600px !important;
-  width: 1000px !important;
-  z-index: 998; }
-
-.skills-set-container {
-  height: 600px !important;
-  width: 1000px !important;
-  z-index: 998;
-  position: relative;
-  overflow: hidden; }
-
-.skills-set-1 {
-  left: 8400px;
-  bottom: 28.25%; }
-
-.skills-1-banner-container {
-  height: 300px !important;
-  width: 500px !important;
-  left: 250px;
-  position: absolute;
-  z-index: 999; }
-
-.skills-1-banner {
-  background-image: url("../images/scripting-language-banner.png");
-  height: 100%;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative; }
-
-.skill-name-cont {
-  height: 200px !important;
-  width: 300px !important;
-  top: -5%;
-  position: absolute;
-  z-index: 998; }
-
-.skill-1-banner {
-  background-image: url("../images/ruby-banner.png");
-  height: 100%;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative; }
-
-.skill-name-1 {
-  left: 12%; }
-
-.skill-2-banner {
-  background-image: url("../images/sql-banner.png");
-  height: 100%;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative; }
-
-.skill-name-2 {
-  left: 32%; }
-
-.skill-3-banner {
-  background-image: url("../images/javascript-banner.png");
-  height: 100%;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative; }
-
-.skill-name-3 {
-  left: 52%; }
-
-.skill-4-banner {
-  background-image: url("../images/html-css-banner.png");
-  height: 100%;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative; }
-
-.skill-name-4 {
-  left: 72%; }
-
-.line {
-  width: 100%;
-  height: 3px;
-  background-color: white;
-  position: absolute; }
-
-.master-line {
-  bottom: 80%; }
-
-.expert-line {
-  bottom: 65%; }
-
-.proficient-line {
-  bottom: 50%; }
-
-.familiar-line {
-  bottom: 35%; }
-
-.beginner-line {
-  bottom: 20%; }
-
-.text {
-  font-family: 'Londrina Solid', cursive;
-  font-size: 30px;
-  color: white;
-  position: absolute; }
-
-.master-text {
-  bottom: 80%; }
-
-.expert-text {
-  bottom: 65%; }
-
-.proficient-text {
-  bottom: 50%; }
-
-.familiar-text {
-  bottom: 35%; }
-
-.beginner-text {
-  bottom: 20%; }
-
-.skills-hoop-container {
-  width: 250px;
-  height: 600px;
-  top: 100%;
-  position: absolute; }
-
-.skills-hoop {
-  background-image: url("../images/hoops.png");
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain; }
-
-.skill-1 {
-  left: 15%; }
-
-.skill-2 {
-  left: 35%; }
-
-.skill-3 {
-  left: 55%; }
-
-.skill-4 {
-  left: 75%; }
-
 /* Fluffy */
 .fluffy-container {
   height: 1000px !important;
@@ -738,126 +857,5 @@ ul, li, p {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute; }
-
-/* ANIMATIONS */
-@keyframes breathe {
-  0%, 100% {
-    top: 0%; }
-  50% {
-    top: 2%; } }
-.breathe {
-  animation: breathe 4s infinite; }
-
-@keyframes bounce-master {
-  0%, 60% {
-    top: 100%; }
-  75% {
-    top: 5%; }
-  90% {
-    top: 25%; }
-  95% {
-    top: 10%; }
-  97% {
-    top: 20%; }
-  100% {
-    top: 15%; } }
-.bounce-master {
-  animation: bounce-master 1s;
-  animation-fill-mode: forwards; }
-
-@keyframes bounce-expert {
-  0%, 60% {
-    top: 100%; }
-  75% {
-    top: 20%; }
-  90% {
-    top: 40%; }
-  95% {
-    top: 25%; }
-  97% {
-    top: 35%; }
-  100% {
-    top: 30%; } }
-.bounce-expert {
-  animation: bounce-expert 1s;
-  animation-fill-mode: forwards; }
-
-@keyframes drop-down {
-  0% {
-    bottom: 100%; }
-  100% {
-    bottom: 33%; } }
-.drop-down {
-  animation-name: drop-down;
-  animation-duration: 1s;
-  animation-fill-mode: forwards; }
-
-@keyframes float {
-  0%, 100% {
-    bottom: 38%; }
-  50% {
-    bottom: 37.5%; } }
-.float {
-  animation: float 4s infinite; }
-
-@keyframes always-float {
-  0%, 100% {
-    top: -20.5%; }
-  50% {
-    top: -22.5%; } }
-.always-float {
-  animation: always-float 4s infinite; }
-
-@keyframes flash {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-.flash {
-  animation: flash 3s infinite; }
-
-@keyframes fadeout {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-.fadeout {
-  animation: fadeout 2s;
-  animation-fill-mode: forwards; }
-
-@keyframes skills-float-1 {
-  0%, 100% {
-    top: -20%; }
-  50% {
-    top: -18%; } }
-.skills-float-1 {
-  animation: skills-float-1 3s infinite; }
-
-.harry-container {
-  height: 242px !important;
-  width: 175px !important;
-  position: fixed;
-  top: auto;
-  bottom: 28.25%;
-  left: 300px;
-  z-index: 999; }
-
-.harry {
-  background-image: url("../images/harry-sprites.png");
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-repeat: no-repeat; }
-
-.face-right {
-  background-position: -595px -386px; }
-
-.walk-face-right-1 {
-  background-position: -415px -386px; }
-
-.walk-face-right-2 {
-  background-position: -775px -386px; }
 
 /*# sourceMappingURL=main.css.map */
