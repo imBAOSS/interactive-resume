@@ -14,10 +14,10 @@ html, body {
   overflow: auto; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Londrina Solid', cursive; }
+  font-family: "Londrina Solid", cursive; }
 
 ul, li, p {
-  font-family: 'Patrick Hand SC', cursive; }
+  font-family: "Patrick Hand SC", cursive; }
 
 /* Floor */
 .floor-container {
