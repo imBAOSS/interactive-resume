@@ -17,6 +17,34 @@ ul, li, p {
   font-family: 'Patrick Hand SC', cursive;
 }
 
+/* Title */
+.title-container {
+  width: 100vw;
+  height: auto;
+  z-index: 998;
+}
+
+.title {
+  background-image: url('../images/title-page.png');
+  height: 100%;
+  width: 100%;
+}
+
+/* Floor */
+.floor-container {
+  height: 100%;
+  width: 82%;
+  top: 71.75%;
+  z-index: 998;
+}
+
+.floor {
+  background-image: url('../images/castle-bricks-brown.png');
+  background-size: 150px 150px;
+  height: 100%;
+  width: 100%;
+}
+
 /* Background */
 
 .content-wrapper {
@@ -38,13 +66,14 @@ ul, li, p {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-size: cover;
+  // background-size: cover;
 }
 
 .background {
-  background-image: url('../images/full-background.png');
+  background-image: url('../images/castle-dark-bricks-brown.png');
   top: 0%;
   left: 0%;
+  background-size: 150px 150px;
 }
 
 /* Down Arrow Key */
