@@ -25,7 +25,12 @@ $(document).ready(function() {
     let $left = $('.content').position().left;
     let $harryLeft = $('.harry-container').position().left;
     let $harryTop = $('.harry-container').position().top;
-    console.log($harryLeft);
+    // console.log(`Left: ${$harryLeft}`);
+    // console.log(`Top: ${$harryTop}`);
+
+    console.log(`Left: ${$left}`);
+    console.log(`Top: ${$top}`);
+
 
     // console.log($('.content').position());
 
@@ -46,7 +51,7 @@ $(document).ready(function() {
       $('.harry-container').css('left', `${$harryLeft}px`)
 
       // second downward vertical navigation
-    } else if ($left < -$width*8 && $top > -$height*3) {
+    } else if ($left < -10700 && $top > -$height*3) {
       $top -= $height*0.05
       $harryTop += $height*0.05
 

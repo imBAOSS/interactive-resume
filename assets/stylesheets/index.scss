@@ -31,7 +31,7 @@ ul, li, p {
   height: 100%;
   width: 100%;
   top: 96.75%;
-  left: 75%;
+  left: 50%;
   z-index: 998;
 }
 
@@ -54,8 +54,8 @@ ul, li, p {
 .content {
   top: 0;
   left: 0;
-  height: 400%;
-  width: 1100%;
+  height: 400%;//3072px;
+  width: 1100%;//15026px;
   position: relative;
 }
 
