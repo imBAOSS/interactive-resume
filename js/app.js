@@ -180,11 +180,14 @@ $(document).ready(function() {
     }
   }
 
+  let alreadyTriggered = false;
+
   function triggerSnareAnimations(harryPosition) {
-    if (harryPosition > 11000) {
-      window.setTimeout(function() {
+    if (harryPosition > 11000 && !alreadyTriggered) {
+      alreadyTriggered = true;
+      window.setInterval(function() {
         animateSnares();
-      }, 5000)
+      }, 1000)
     }
   }
 
