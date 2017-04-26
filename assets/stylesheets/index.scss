@@ -20,9 +20,10 @@ ul, li, p {
 /* Floor */
 .floor-container {
   height: 100%;
-  width: 100%;
+  width: 11000px;
   top: 71.75%;
-  right: 25%;
+  left: 0;
+  // right: 25%;
   z-index: 998;
 }
 

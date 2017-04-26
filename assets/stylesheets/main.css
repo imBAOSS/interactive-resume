@@ -22,9 +22,9 @@ ul, li, p {
 /* Floor */
 .floor-container {
   height: 100%;
-  width: 100%;
+  width: 11000px;
   top: 71.75%;
-  right: 25%;
+  left: 0;
   z-index: 998; }
 
 .basement-container {
@@ -332,7 +332,8 @@ ul, li, p {
   background-image: url("../images/title-page.png");
   height: 100%;
   width: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 /* Down Arrow Key */
 .down-arrow-cont {
@@ -837,8 +838,9 @@ ul, li, p {
   height: 1000px;
   width: 1500px;
   left: 9500px;
-  bottom: 18.85%;
-  z-index: 998; }
+  bottom: 20.2%;
+  z-index: 998;
+  position: absolute; }
 
 .fluffy {
   background-image: url("../images/fluffy-main.png");

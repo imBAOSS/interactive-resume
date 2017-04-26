@@ -163,7 +163,7 @@ $(document).ready(function() {
       $('.harry-container').css('left', `${$harryLeft}px`)
 
       // second downward vertical navigation
-    } /*else if ($left < -$width*8 && $top > -$height*3) {
+    } else if ($left < -$width*8 && $top > -$height*3) {
       $top += $height*0.05
       $harryTop -= $height*0.05
 
@@ -177,7 +177,7 @@ $(document).ready(function() {
 
       $('.content').css('left', `${$left}px`)
       $('.harry-container').css('left', `${$harryLeft}px`)
-    }*/
+    }
 
     // console.log($('.content').position());
     // let $top = $('.content').position().top;
