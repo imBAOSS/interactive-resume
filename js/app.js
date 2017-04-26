@@ -42,7 +42,7 @@ $(document).ready(function() {
       $('.content').css('top', `${$top}px`)
 
       // first rightward horizontal navigation
-    } else if ($top <= -$height*2 && $left >= -$width*8 ) {
+    } else if ($top <= -$height*2 && $left >= -10700 ) {
       $left -= $width*0.05
       $harryLeft += $width*0.05
       console.log($harryLeft);
@@ -135,6 +135,7 @@ $(document).ready(function() {
     triggerBannerAnimations($harryLeft);
     triggerPortraitAnimations($harryLeft);
     triggerSkill1Animations($harryLeft);
+    triggerSnareAnimations($harryLeft);
   }
 
   function triggerSkill1Animations(harryPosition) {
@@ -177,6 +178,27 @@ $(document).ready(function() {
     if (harryPosition > 4500) {
       $('.portrait-1').addClass('fadeout')
     }
+  }
+
+  function triggerSnareAnimations(harryPosition) {
+    if (harryPosition > 11000) {
+      window.setTimeout(function() {
+        animateSnares();
+      }, 5000)
+    }
+  }
+
+  function animateSnares() {
+    console.log('entered function');
+    let first = $('.snare-4');
+    let second = $('.snare-3');
+    let third = $('.snare-2');
+    let fourth = $('.snare-1');
+
+    first.removeClass('snare-4').addClass('snare-1');
+    second.removeClass('snare-3').addClass('snare-4');
+    third.removeClass('snare-2').addClass('snare-3');
+    fourth.removeClass('snare-1').addClass('snare-2');
   }
 
   function resetHarryPosition(e) {
