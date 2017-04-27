@@ -111,21 +111,6 @@ $(document).ready(function() {
       $('.content').css('left', `${$left}px`)
       $('.harry-container').css('left', `${$harryLeft}px`)
     }
-
-    // console.log($('.content').position());
-    // let $top = $('.content').position().top;
-    // let $left = $('.content').position().left;
-    //
-    // let height = $(window).height();
-    // let width = $(window).width();
-    //
-    // if ($top <= -height && $left <= -width) {
-    //   $left += width*0.05
-    //   $('.content').css('left', `${$left}px`)
-    // } else {
-    //   $top += height*0.05
-    //   $('.content').css('top', `${$top}px`)
-    // }
   }
 
   function  triggerAnimations() {
@@ -209,7 +194,7 @@ $(document).ready(function() {
       $('.harry').addClass('walk-face-right-1')
       setTimeout(function() {
         $('.harry').removeClass('walk-face-right-1')
-      }, 1000);
+      }, 500);
     }
   }
   function animateHarry(e) {
