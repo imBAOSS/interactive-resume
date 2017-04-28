@@ -249,7 +249,6 @@ $(document).ready(function() {
   }
 
   function animateSnares() {
-    console.log('entered function');
     let first = $('.snare-4');
     let second = $('.snare-3');
     let third = $('.snare-2');
