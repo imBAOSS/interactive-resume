@@ -102,6 +102,7 @@ $(document).ready(function() {
 
     console.log(`Left: ${$left}`);
     console.log(`Top: ${$top}`);
+    console.log($harryLeft);
 
 
     // console.log($('.content').position());
@@ -131,7 +132,7 @@ $(document).ready(function() {
       $('.harry-container').css('top', `${$harryTop}px`)
 
       // second rightward horizontal navigation
-    } else if ($top <= -$height*3 && $left >= -$width*9) {
+    } else if ($top <= -$height*3 && $left >= -$width*10) {
       $left -= $width*0.05
       $harryLeft += $width*0.05
 

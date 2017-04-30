@@ -51,7 +51,7 @@ ul, li, p {
   top: 0;
   left: 0;
   height: 400%;
-  width: 1100%;
+  width: 16000px;
   position: relative; }
 
 .content > div {
@@ -948,8 +948,8 @@ ul, li, p {
   background-position: -254px -22px; }
 
 .mirror-container {
-  height: 242px;
-  width: 200px;
+  height: 500px;
+  width: 300px;
   position: fixed;
   top: auto;
   bottom: 3.25%;
@@ -961,6 +961,8 @@ ul, li, p {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: -100px -36px;
+  background-size: 500px; }
 
 /*# sourceMappingURL=main.css.map */
