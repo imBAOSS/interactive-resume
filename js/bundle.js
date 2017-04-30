@@ -268,11 +268,13 @@ $(document).ready(function() {
       }, 500);
     }
   }
+
+  let animatingHarry = false;
+
+
   function animateHarry(e) {
     let harry = $('.harry');
-    if (animatingHarry) {
-
-    } else {
+    if (!animatingHarry) {
       if (e.keyCode === 40) {
         animatingHarry = true;
         harry.addClass('walk-face-right-2')
@@ -280,6 +282,7 @@ $(document).ready(function() {
           harry.removeClass('walk-face-right-2')
           animatingHarry = false;
         }, 1000);
+    } else {
         // setTimeout(function() {
         //   harry.addClass('walk-face-right-1')
         // }, 500);
@@ -316,7 +319,6 @@ console.log($('.background').width());
 
 let $height = $(window).height();
 let $width = $(window).width();
-let animatingHarry = false;
 
 let animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
