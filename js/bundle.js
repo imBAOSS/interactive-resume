@@ -111,7 +111,7 @@ $(document).ready(function() {
       $('.content').css('top', `${$top}px`)
 
       // first rightward horizontal navigation
-    } else if ($top <= -$height*2 && $left.between(-10800, 10)) {
+    } else if ($top <= -$height*2 && $left.between(-10750, 10)) {
       $left -= $width*0.05
       $harryLeft += $width*0.05
 
