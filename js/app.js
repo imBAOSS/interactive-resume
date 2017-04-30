@@ -1,16 +1,5 @@
 $(document).ready(function() {
 
-  // $(window).keydown((e) => {
-  //   switch (e.keyCode) {
-  //     case 40:
-  //       return processDownArrow();
-  //     case 38:
-  //       return processUpArrow();
-  //     default:
-  //
-  //   }
-  // })
-
   function moveLayers(e) {
     switch (e.keyCode) {
       case 40:
@@ -25,15 +14,8 @@ $(document).ready(function() {
     let $left = $('.content').position().left;
     let $harryLeft = $('.harry-container').position().left;
     let $harryTop = $('.harry-container').position().top;
-    // console.log(`Left: ${$harryLeft}`);
-    // console.log(`Top: ${$harryTop}`);
-
-    // console.log($('.content').position());
-
-
 
       // first downward vertical navigation
-
     if ($top.between(-$height*2, 1)) {
       $top -= $height*0.05
       $('.content').css('top', `${$top}px`)
@@ -62,8 +44,6 @@ $(document).ready(function() {
       $('.content').css('left', `${$left}px`)
       $('.harry-container').css('left', `${$harryLeft}px`)
     }
-
-    // console.log($('.content').position());
   }
 
   function processUpArrow() {
@@ -76,13 +56,11 @@ $(document).ready(function() {
     if ($top.between(-$height*2 - 100, 0) && $harryLeft <= 300) {
       $top += $height*0.05
       $('.content').css('top', `${$top}px`)
-      console.log('in first');
 
       // first leftward horizontal navigation
     } else if ($top.between(-$height*2 - 50, 0) && $left.between(-18000, 10)) {
       $left += $width*0.05
       $harryLeft -= $width*0.05
-      console.log('in second');
 
       $('.content').css('left', `${$left}px`)
       $('.harry-container').css('left', `${$harryLeft}px`)
@@ -93,22 +71,15 @@ $(document).ready(function() {
       $harryTop -= $height*0.05
       $('.content').css('top', `${$top}px`)
       $('.harry-container').css('top', `${$harryTop}px`)
-      console.log('in third');
 
       // second leftward horizontal navigation
     } else if ($top <= -$height*3 && $left.between(-10700, -13000)) {
       $left += $width*0.05
       $harryLeft -= $width*0.05
-      console.log('in fourth');
 
       $('.content').css('left', `${$left}px`)
       $('.harry-container').css('left', `${$harryLeft}px`)
     }
-
-    console.log(`Top: ${$('.content').position().top}`);
-    console.log(`Left: ${$('.content').position().left}`);
-    console.log(`HarryTop: ${$('.harry-container').position().top}`);
-    console.log(`HarryLeft: ${$('.harry-container').position().left}`);
   }
 
   function  triggerAnimations() {
@@ -202,6 +173,9 @@ $(document).ready(function() {
     let harry = $('.harry');
     if (!animatingHarry) {
       if (e.keyCode === 40) {
+        if () {
+          
+        }
         animatingHarry = true;
         harry.addClass('walk-face-right-2')
         setTimeout(function() {
