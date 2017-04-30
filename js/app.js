@@ -28,10 +28,6 @@ $(document).ready(function() {
     // console.log(`Left: ${$harryLeft}`);
     // console.log(`Top: ${$harryTop}`);
 
-    console.log(`Left: ${$left}`);
-    console.log(`Top: ${$top}`);
-    console.log($harryLeft);
-
     // console.log($('.content').position());
 
 
@@ -43,16 +39,15 @@ $(document).ready(function() {
       $('.content').css('top', `${$top}px`)
 
       // first rightward horizontal navigation
-    } else if ($top <= -$height*2 && $left.between(-10700, 1)) {
+    } else if ($top <= -$height*2 && $left.between(-10750, 1)) {
       $left -= $width*0.05
       $harryLeft += $width*0.05
-      console.log($harryLeft);
 
       $('.content').css('left', `${$left}px`)
       $('.harry-container').css('left', `${$harryLeft}px`)
 
       // second downward vertical navigation
-    } else if ($left < -10700 && $top > -$height*3) {
+    } else if ($left < -10750 && $top > -$height*3) {
       $top -= $height*0.05
       $harryTop += $height*0.05
 
@@ -60,7 +55,7 @@ $(document).ready(function() {
       $('.harry-container').css('top', `${$harryTop}px`)
 
       // second rightward horizontal navigation
-    } else if ($top <= -$height*3 && $left.between(-10700, -12900)) {
+    } else if ($top <= -$height*3 && $left.between(-10750, -12900)) {
       $left -= $width*0.05
       $harryLeft += $width*0.05
 
@@ -76,31 +71,38 @@ $(document).ready(function() {
     let $left = $('.content').position().left;
     let $harryLeft = $('.harry-container').position().left;
     let $harryTop = $('.harry-container').position().top;
+
+    console.log(`Left: ${$left}`);
+    console.log(`Top: ${$top}`);
     console.log($harryLeft);
 
     // console.log($('.content').position());
 
 
+    console.log(-$height * 2);
+    console.log(-$height * 4);
 
+    console.log($left >= -10700);
+    console.log($top.between(-$height*2, -$height*4));
       // first upward vertical navigation
     if ($top.between(-$height*2, 0)) {
       $top += $height*0.05
       $('.content').css('top', `${$top}px`)
 
       // first leftward horizontal navigation
-    } else if ($top <= -$height*2 && $left.between(-10700, 0)) {
+    } else if ($top <= -$height*2 && $left.between(-17800, 0)) {
       $left += $width*0.05
       $harryLeft -= $width*0.05
       console.log($harryLeft);
+      console.log("inside");
 
       $('.content').css('left', `${$left}px`)
       $('.harry-container').css('left', `${$harryLeft}px`)
 
       // second upward vertical navigation
-    } else if ($left < -$width*8 && $top > -$height*3) {
+    } else if ($left >= -10700 && $top.between(-$height*2, -$height*4)) {
       $top += $height*0.05
       $harryTop -= $height*0.05
-
       $('.content').css('top', `${$top}px`)
       $('.harry-container').css('top', `${$harryTop}px`)
 

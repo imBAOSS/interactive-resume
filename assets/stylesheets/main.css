@@ -368,6 +368,8 @@ ul, li, p {
 
 /* Title */
 .title-container {
+  display: flex;
+  justify-content: center;
   min-width: 100vw;
   height: 100%;
   z-index: 998; }
@@ -381,10 +383,10 @@ ul, li, p {
 
 /* Down Arrow Key */
 .down-arrow-cont {
+  position: absolute;
+  top: 21%;
   height: 50px;
   width: 400px;
-  top: 21%;
-  left: 3.25%;
   z-index: 999; }
 
 .down-arrow {
