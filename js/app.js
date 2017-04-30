@@ -39,7 +39,7 @@ $(document).ready(function() {
       $('.content').css('top', `${$top}px`)
 
       // first rightward horizontal navigation
-    } else if ($top <= -$height*2 && $left.between(-10750, 1)) {
+    } else if ($top <= -$height*2 && $left.between(-10800, 10)) {
       $left -= $width*0.05
       $harryLeft += $width*0.05
 
@@ -72,48 +72,43 @@ $(document).ready(function() {
     let $harryLeft = $('.harry-container').position().left;
     let $harryTop = $('.harry-container').position().top;
 
-    console.log(`Left: ${$left}`);
-    console.log(`Top: ${$top}`);
-    console.log($harryLeft);
-
-    // console.log($('.content').position());
-
-
-    console.log(-$height * 2);
-    console.log(-$height * 4);
-
-    console.log($left >= -10700);
-    console.log($top.between(-$height*2, -$height*4));
       // first upward vertical navigation
-    if ($top.between(-$height*2, 0)) {
+    if ($top.between(-$height*2 - 100, 0) && $harryLeft <= 300) {
       $top += $height*0.05
       $('.content').css('top', `${$top}px`)
+      console.log('in first');
 
       // first leftward horizontal navigation
-    } else if ($top <= -$height*2 && $left.between(-17800, 0)) {
+    } else if ($top.between(-$height*2 - 50, 0) && $left.between(-18000, 10)) {
       $left += $width*0.05
       $harryLeft -= $width*0.05
-      console.log($harryLeft);
-      console.log("inside");
+      console.log('in second');
 
       $('.content').css('left', `${$left}px`)
       $('.harry-container').css('left', `${$harryLeft}px`)
 
       // second upward vertical navigation
-    } else if ($left >= -10700 && $top.between(-$height*2, -$height*4)) {
+    } else if ($left >= -10800 && $top.between(-$height*2, -$height*4)) {
       $top += $height*0.05
       $harryTop -= $height*0.05
       $('.content').css('top', `${$top}px`)
       $('.harry-container').css('top', `${$harryTop}px`)
+      console.log('in third');
 
       // second leftward horizontal navigation
     } else if ($top <= -$height*3 && $left.between(-10700, -13000)) {
       $left += $width*0.05
       $harryLeft -= $width*0.05
+      console.log('in fourth');
 
       $('.content').css('left', `${$left}px`)
       $('.harry-container').css('left', `${$harryLeft}px`)
     }
+
+    console.log(`Top: ${$('.content').position().top}`);
+    console.log(`Left: ${$('.content').position().left}`);
+    console.log(`HarryTop: ${$('.harry-container').position().top}`);
+    console.log(`HarryLeft: ${$('.harry-container').position().left}`);
   }
 
   function  triggerAnimations() {
