@@ -32,18 +32,18 @@ $(document).ready(function() {
     console.log(`Top: ${$top}`);
     console.log($harryLeft);
 
-
     // console.log($('.content').position());
 
 
 
       // first downward vertical navigation
-    if ($top > -$height*2) {
+
+    if ($top.between(-$height*2, 1)) {
       $top -= $height*0.05
       $('.content').css('top', `${$top}px`)
 
       // first rightward horizontal navigation
-    } else if ($top <= -$height*2 && $left >= -10700 ) {
+    } else if ($top <= -$height*2 && $left.between(-10700, 1)) {
       $left -= $width*0.05
       $harryLeft += $width*0.05
       console.log($harryLeft);
@@ -60,7 +60,7 @@ $(document).ready(function() {
       $('.harry-container').css('top', `${$harryTop}px`)
 
       // second rightward horizontal navigation
-    } else if ($top <= -$height*3 && $left >= -$width*10) {
+    } else if ($top <= -$height*3 && $left.between(-10700, -12900)) {
       $left -= $width*0.05
       $harryLeft += $width*0.05
 
@@ -82,13 +82,13 @@ $(document).ready(function() {
 
 
 
-      // first downward vertical navigation
-    if ($top > -$height*2) {
+      // first upward vertical navigation
+    if ($top.between(-$height*2, 0)) {
       $top += $height*0.05
       $('.content').css('top', `${$top}px`)
 
-      // first rightward horizontal navigation
-    } else if ($top <= -$height*2 && $left >= -$width*15 ) {
+      // first leftward horizontal navigation
+    } else if ($top <= -$height*2 && $left.between(-10700, 0)) {
       $left += $width*0.05
       $harryLeft -= $width*0.05
       console.log($harryLeft);
@@ -96,7 +96,7 @@ $(document).ready(function() {
       $('.content').css('left', `${$left}px`)
       $('.harry-container').css('left', `${$harryLeft}px`)
 
-      // second downward vertical navigation
+      // second upward vertical navigation
     } else if ($left < -$width*8 && $top > -$height*3) {
       $top += $height*0.05
       $harryTop -= $height*0.05
@@ -104,8 +104,8 @@ $(document).ready(function() {
       $('.content').css('top', `${$top}px`)
       $('.harry-container').css('top', `${$harryTop}px`)
 
-      // second rightward horizontal navigation
-    } else if ($top <= -$height*3 && $left >= -$width*9) {
+      // second leftward horizontal navigation
+    } else if ($top <= -$height*3 && $left.between(-10700, -13000)) {
       $left += $width*0.05
       $harryLeft -= $width*0.05
 
@@ -250,3 +250,8 @@ let $height = $(window).height();
 let $width = $(window).width();
 
 let animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+Number.prototype.between = function (a, b) {
+  let min = Math.min(a,b), max = Math.max(a, b);
+  return this > min && this < max;
+};
