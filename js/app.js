@@ -173,8 +173,11 @@ $(document).ready(function() {
     let harry = $('.harry');
     if (!animatingHarry) {
       if (e.keyCode === 40) {
-        if () {
-          
+        $left = $('.content').position().left
+        if ($left.between(-10700, -10800)) {
+          harry.addClass('fall-right');
+        } else if ($left <= -10800 || $left >= -10700) {
+          harry.removeClass('fall-right');
         }
         animatingHarry = true;
         harry.addClass('walk-face-right-2')
