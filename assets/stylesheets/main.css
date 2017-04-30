@@ -925,4 +925,42 @@ ul, li, p {
   background-size: contain;
   position: absolute; }
 
+.quirrell-container {
+  height: 242px;
+  width: 200px;
+  position: fixed;
+  top: auto;
+  bottom: 3.25%;
+  left: 14000px;
+  z-index: 998; }
+
+.quirrell {
+  background-image: url("../images/quirrell.png");
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat; }
+
+.quirrell-left {
+  background-position: -50px -22px; }
+
+.dust {
+  background-position: -254px -22px; }
+
+.mirror-container {
+  height: 242px;
+  width: 200px;
+  position: fixed;
+  top: auto;
+  bottom: 3.25%;
+  left: 13500px;
+  z-index: 998; }
+
+.mirror {
+  background-image: url("../images/mirror.png");
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat; }
+
 /*# sourceMappingURL=main.css.map */

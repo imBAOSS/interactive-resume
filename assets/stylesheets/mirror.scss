@@ -1,0 +1,17 @@
+.mirror-container {
+  height: 242px;
+  width: 200px;
+  position: fixed;
+  top: auto;
+  bottom: 3.25%;
+  left: 13500px;
+  z-index: 998;
+}
+
+.mirror {
+  background-image: url('../images/mirror.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
