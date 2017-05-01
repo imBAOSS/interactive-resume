@@ -158,10 +158,23 @@ $(document).ready(function() {
   }
 
   function resetHarryPosition(e) {
-    if (e.keyCode === 40) {
-      $('.harry').addClass('walk-face-right-1')
+    let $harryLeft = $('.harry-container').position().left;
+    if (animatingHarry) {
       setTimeout(function() {
-        $('.harry').removeClass('walk-face-right-1')
+
+        if (e.keyCode === 40 && $harryLeft > 300) {
+          $('.harry').attr('class', 'harry');
+          $('.harry').addClass('face-right walk-face-right-1');
+          setTimeout(function() {
+            $('.harry').removeClass('walk-face-right-1')
+          }, 750);
+        } else if (e.keyCode === 38 && $harryLeft > 300) {
+          $('.harry').attr('class', 'harry');
+          $('.harry').addClass('face-left walk-face-left-1');
+          setTimeout(function() {
+            $('.harry').removeClass('walk-face-left-1')
+          }, 750);
+        }
       }, 500);
     }
   }
@@ -171,27 +184,36 @@ $(document).ready(function() {
 
   function animateHarry(e) {
     let harry = $('.harry');
+    let $harryLeft = $('.harry-container').position().left;
     if (!animatingHarry) {
-      if (e.keyCode === 40) {
-        $left = $('.content').position().left
-        if ($left.between(-10700, -10800)) {
+      $left = $('.content').position().left;
+
+      if (e.keyCode === 40 && $harryLeft > 300) {
+        if ($left.between(-10700, -10850)) {
           harry.addClass('fall-right');
-        } else if ($left <= -10800 || $left >= -10700) {
+        } else if ($left <= -10850 || $left >= -10650) {
           harry.removeClass('fall-right');
         }
+
         animatingHarry = true;
         harry.addClass('walk-face-right-2')
         setTimeout(function() {
           harry.removeClass('walk-face-right-2')
           animatingHarry = false;
         }, 1000);
-    } else {
-        // setTimeout(function() {
-        //   harry.addClass('walk-face-right-1')
-        // }, 500);
-        // setTimeout(function() {
-        //   harry.removeClass('walk-face-right-1')
-        // }, 500);
+      } else if (e.keyCode === 38 && $harryLeft > 300) {
+        if ($left.between(-10700, -10850)) {
+          harry.addClass('fall-left');
+        } else if ($left <= -10850 || $left >=-10650) {
+          harry.removeClass('fall-left');
+        }
+
+        animatingHarry = true;
+        harry.addClass('walk-face-left-2')
+        setTimeout(function() {
+          harry.removeClass('walk-face-left-2')
+          animatingHarry = false;
+        }, 1000);
       }
     }
   }
@@ -201,9 +223,9 @@ $(document).ready(function() {
   })
 
   $(window).keydown(function(e) {
+    animateHarry(e);
     moveLayers(e);
     triggerAnimations();
-    animateHarry(e);
     // positionHarry();
   })
 

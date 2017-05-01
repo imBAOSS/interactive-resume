@@ -418,16 +418,16 @@ ul, li, p {
   background-position: -570px -127px; }
 
 .walk-face-right-1 {
-  background-position: -415px -386px; }
+  background-position: -400px -386px; }
 
 .walk-face-right-2 {
   background-position: -775px -386px; }
 
 .walk-face-left-1 {
-  background-position: -775px -127px; }
+  background-position: -380px -127px; }
 
 .walk-face-left-2 {
-  background-position: -380px -127px; }
+  background-position: -775px -127px; }
 
 .fall-right {
   background-position: -188px -390px; }
@@ -905,27 +905,25 @@ ul, li, p {
   height: 1000px;
   width: 1500px;
   left: 9500px;
-  bottom: 18.9%;
+  bottom: 28.25%;
   z-index: 998;
-  position: absolute; }
+  position: relative; }
+  .fluffy-container div {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute; }
 
 .fluffy {
   background-image: url("../images/fluffy-main.png");
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 998;
-  position: absolute; }
+  background-position-y: 294px;
+  z-index: 998; }
 
 .fluffy-body {
   background-image: url("../images/fluffy-body.png");
-  z-index: 997;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute; }
+  background-position-y: 294px;
+  z-index: 997; }
 
 .quirrell-container {
   height: 242px;
