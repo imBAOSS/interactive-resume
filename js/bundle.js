@@ -288,6 +288,14 @@ $(document).ready(function() {
         }, 1000);
       }
     }
+
+    function triggerQuirrellFight(e) {
+      $left = $('.content').position().left
+
+      if (e.keyCode === 32 && $left < -12900) {
+        console.log('ahoy matey');
+      }
+    }
   }
 
   $(window).keyup(function(e) {
@@ -297,7 +305,8 @@ $(document).ready(function() {
   $(window).keydown(function(e) {
     animateHarry(e);
     moveLayers(e);
-    triggerAnimations();
+    triggerAnimations(e);
+    triggerQuirrellFight(e);
     // positionHarry();
   })
 
