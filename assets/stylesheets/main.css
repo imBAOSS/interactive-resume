@@ -161,6 +161,14 @@ ul, li, p {
 .skills-float-1 {
   animation: skills-float-1 3s infinite; }
 
+@keyframes spell-fire {
+  0% {
+    left: -100px; }
+  100% {
+    left: 400px; } }
+.spell-fire {
+  animation: spell-fire 4s; }
+
 /* Skills Banner and Container */
 .skills-container {
   left: 7700px; }
@@ -964,5 +972,22 @@ ul, li, p {
   background-repeat: no-repeat;
   background-position: -100px -36px;
   background-size: 500px; }
+
+.spell-container {
+  height: 200px;
+  width: 400px;
+  top: auto;
+  bottom: 3.25%;
+  left: 13426px;
+  z-index: 999; }
+
+.spell {
+  background-color: red;
+  top: 38.5%;
+  left: -80px;
+  height: 2px;
+  width: 20%;
+  overflow: hidden;
+  position: absolute; }
 
 /*# sourceMappingURL=main.css.map */

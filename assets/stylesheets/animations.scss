@@ -165,3 +165,17 @@
 .skills-float-1 {
   animation: skills-float-1 3s infinite;
 }
+
+@keyframes spell-fire {
+  0% {
+    left: -100px;
+  }
+
+  100% {
+    left: 400px;
+  }
+}
+
+.spell-fire {
+  animation: spell-fire 4s;
+}

@@ -229,6 +229,15 @@ $(document).ready(function() {
     fourth.removeClass('snare-1').addClass('snare-2');
   }
 
+  function triggerQuirrellFight(e) {
+    $left = $('.content').position().left
+
+    if (e.keyCode === 32 && $left < -12900) {
+      $('.harry').addClass('spell-right');
+      $('.spell').addClass('spell-fire');
+    }
+  }
+
   function resetHarryPosition(e) {
     let $harryLeft = $('.harry-container').position().left;
     if (animatingHarry) {
@@ -288,14 +297,6 @@ $(document).ready(function() {
         }, 1000);
       }
     }
-
-    function triggerQuirrellFight(e) {
-      $left = $('.content').position().left
-
-      if (e.keyCode === 32 && $left < -12900) {
-        console.log('ahoy matey');
-      }
-    }
   }
 
   $(window).keyup(function(e) {
@@ -316,8 +317,7 @@ $(document).ready(function() {
     // calculate distance needed to travel
     $height = $(window).height();
     $width = $(window).width();
-})
-
+  })
 })
 
 console.log($('.background').height());
