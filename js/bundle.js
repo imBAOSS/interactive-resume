@@ -303,10 +303,10 @@ $(document).ready(function() {
   })
 
   $(window).keydown(function(e) {
+    triggerQuirrellFight(e);
     animateHarry(e);
     moveLayers(e);
     triggerAnimations(e);
-    triggerQuirrellFight(e);
     // positionHarry();
   })
 
