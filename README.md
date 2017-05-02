@@ -11,7 +11,7 @@ This project is an interactive resume that was inspired by Robby Leonardi's [Int
 ![animation][animation]
 
 ## Implementation
-My interactive resume utilzed the following technologies:
+My interactive resume utilized the following technologies:
 - jQuery
 - JavaScript
 - HTML5
