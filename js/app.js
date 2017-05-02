@@ -259,13 +259,8 @@ $(document).ready(function() {
   })
 })
 
-console.log($('.background').height());
-console.log($('.background').width());
-
 let $height = $(window).height();
 let $width = $(window).width();
-
-let animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 Number.prototype.between = function (a, b) {
   let min = Math.min(a,b), max = Math.max(a, b);
