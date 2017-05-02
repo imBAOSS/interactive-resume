@@ -28,6 +28,7 @@ JavaScript was used to set timings and intervals for certain animations.
 SASS was used to separate CSS stylesheets by class, allowing for modularizing of common classes. Variables minimized inconsistencies with color and font styles. Nested CSS rules allowed for more organized CSS files.
 
 ### Future
+- [ ] Add contact form modal with social links
 - [ ] Improve bugs with various window sizes.
 - [ ] Incorporate mousewheel/scrolling to movement methods.
 - [ ] Make mobile friendly.
