@@ -90,6 +90,13 @@ $(document).ready(function() {
     triggerPortraitAnimations($harryLeft);
     triggerSkill1Animations($harryLeft);
     triggerSnareAnimations($harryLeft);
+    triggerSpacebarAnimation($left);
+  }
+
+  function triggerSpacebarAnimation(left) {
+    if (left < -12900) {
+      $('.spacebar').addClass('flash');
+    }
   }
 
   function triggerSkill1Animations(harryPosition) {
@@ -161,8 +168,12 @@ $(document).ready(function() {
     $left = $('.content').position().left
 
     if (e.keyCode === 32 && $left < -12900) {
+      $('.spacebar').removeClass('flash');
       $('.harry').addClass('spell-right');
       $('.spell').addClass('spell-fire');
+      setTimeout(function() {
+        $('.quirrell').addClass('dust').removeClass('quirrell-left');
+      }, 1000)
     }
   }
 

@@ -167,7 +167,7 @@ ul, li, p {
   100% {
     left: 400px; } }
 .spell-fire {
-  animation: spell-fire 4s; }
+  animation: spell-fire 1s; }
 
 /* Skills Banner and Container */
 .skills-container {
@@ -958,7 +958,6 @@ ul, li, p {
 .mirror-container {
   height: 500px;
   width: 300px;
-  position: fixed;
   top: auto;
   bottom: 3.25%;
   left: 13500px;
@@ -979,7 +978,8 @@ ul, li, p {
   top: auto;
   bottom: 3.25%;
   left: 13426px;
-  z-index: 999; }
+  z-index: 999;
+  overflow: hidden; }
 
 .spell {
   background-color: red;
@@ -987,7 +987,23 @@ ul, li, p {
   left: -80px;
   height: 2px;
   width: 20%;
-  overflow: hidden;
   position: absolute; }
+
+.spacebar-container {
+  height: 50px;
+  width: 450px;
+  top: auto;
+  bottom: 0.25%;
+  left: 13400px;
+  z-index: 999; }
+
+.spacebar {
+  background-image: url("../images/spacebar.png");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: contain;
+  opacity: 0; }
 
 /*# sourceMappingURL=main.css.map */
