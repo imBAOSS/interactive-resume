@@ -37,6 +37,6 @@ SASS was used to separate CSS stylesheets by class, allowing for modularizing of
 - [ ] Refactor
 
 [live]: https://imbaoss.github.io/interactive-resume/
-[interactive]: www.rleonardi.com/interactive-resume/
+[interactive]: http://www.rleonardi.com/interactive-resume/
 [title]: ./docs/images/title-page.gif
 [animation]: ./docs/images/animation.gif
