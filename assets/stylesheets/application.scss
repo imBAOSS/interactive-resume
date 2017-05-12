@@ -1,5 +1,6 @@
 $londrina: 'Londrina Solid', cursive;
 $patrick: 'Patrick Hand SC', cursive;
+$fa-font-path: '../stylesheets/font-awesome-4.7.0';
 
 @import 'css-reset';
 @import 'index';
@@ -17,3 +18,4 @@ $patrick: 'Patrick Hand SC', cursive;
 @import 'mirror';
 @import 'spell';
 @import 'spacebar';
+@import 'footer';

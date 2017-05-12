@@ -230,7 +230,7 @@ ul, li, p {
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  position: relativ; }
+  position: relative; }
 
 .skill-set-1-banner {
   background-image: url("../images/programming-language-banner.png"); }
@@ -1022,5 +1022,41 @@ ul, li, p {
   background-position: 0px 0px;
   background-size: contain;
   opacity: 0; }
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0%;
+  width: 100vw;
+  height: 50px;
+  z-index: 10000;
+  background: white;
+  background: rgba(255, 255, 255, 0.3); }
+
+.links-container {
+  height: 100%;
+  width: 400px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+  top: 5%; }
+  .links-container a {
+    height: 100%;
+    width: auto; }
+    .links-container a div {
+      height: 80%;
+      width: 100px;
+      background-size: contain;
+      background-repeat: no-repeat; }
+
+.resume {
+  background-image: url("../images/resume-text.png"); }
+
+.github-repo {
+  background-image: url("../images/github-text.png"); }
+
+.portfolio-website {
+  background-image: url("../images/portfolio-text.png"); }
 
 /*# sourceMappingURL=main.css.map */
