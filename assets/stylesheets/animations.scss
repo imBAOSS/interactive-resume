@@ -75,6 +75,36 @@
   animation: bounce-expert 1s;
   animation-fill-mode: forwards;
 }
+@keyframes bounce-proficient {
+  0%, 60% {
+    top: 100%;
+  }
+
+  75% {
+    top: 35%;
+  }
+
+  90% {
+    top: 55%;
+  }
+
+  95% {
+    top: 40%;
+  }
+
+  97% {
+    top: 50%;
+  }
+
+  100% {
+    top: 45%;
+  }
+}
+
+.bounce-proficient {
+  animation: bounce-proficient 1s;
+  animation-fill-mode: forwards;
+}
 
 @keyframes drop-down {
   0% {
