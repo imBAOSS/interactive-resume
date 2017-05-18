@@ -3416,7 +3416,27 @@ ul, li, p {
   align-items: center; }
   .black-out-background .contact-modal-container {
     height: 80%;
-    width: 80%;
-    background-color: white; }
+    width: 40%;
+    background-image: url("../images/parchment.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .black-out-background .contact-modal-container input {
+      background-color: transparent; }
+    .black-out-background .contact-modal-container .congrats-banner-container {
+      height: 35%;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .black-out-background .contact-modal-container .congrats-banner-container .congrats-banner {
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/congrats-ribbon.png");
+        background-size: contain;
+        background-repeat: no-repeat; }
 
 /*# sourceMappingURL=main.css.map */
