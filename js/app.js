@@ -170,13 +170,16 @@ $(document).ready(function() {
     $left = $('.content').position().left
 
     if (e.keyCode === 32 && $left < -12900) {
-      $('.spacebar').removeClass('flash');
+      killedQuirrell = true;
       $('.harry').addClass('spell-right');
       $('.spell').addClass('spell-fire');
       setTimeout(function() {
         $('.quirrell').addClass('dust').removeClass('quirrell-left');
-      }, 1000)
-      killedQuirrell = true;
+        $('.spacebar').removeClass('flash');
+      }, 1000);
+      setTimeout(function() {
+        activateContactModal();
+      }, 2000);
     }
   }
 
@@ -244,6 +247,7 @@ $(document).ready(function() {
   function activateContactModal() {
     if (killedQuirrell) {
       // make display visible
+      $('.black-out-background').removeClass('invisible');
     }
   }
 
@@ -256,7 +260,6 @@ $(document).ready(function() {
     animateHarry(e);
     moveLayers(e);
     triggerAnimations(e);
-    activateContactModal();
     // positionHarry();
   })
 

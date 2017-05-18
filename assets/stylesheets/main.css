@@ -3402,4 +3402,21 @@ ul, li, p {
   overflow: visible;
   clip: auto; }
 
+.invisible {
+  display: none !important; }
+
+.black-out-background {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .black-out-background .contact-modal-container {
+    height: 80%;
+    width: 80%;
+    background-color: white; }
+
 /*# sourceMappingURL=main.css.map */

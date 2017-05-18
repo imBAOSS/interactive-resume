@@ -236,16 +236,22 @@ $(document).ready(function() {
     fourth.removeClass('snare-1').addClass('snare-2');
   }
 
+  let killedQuirrell = false;
+
   function triggerQuirrellFight(e) {
     $left = $('.content').position().left
 
     if (e.keyCode === 32 && $left < -12900) {
-      $('.spacebar').removeClass('flash');
+      killedQuirrell = true;
       $('.harry').addClass('spell-right');
       $('.spell').addClass('spell-fire');
       setTimeout(function() {
         $('.quirrell').addClass('dust').removeClass('quirrell-left');
-      }, 1000)
+        $('.spacebar').removeClass('flash');
+      }, 1000);
+      setTimeout(function() {
+        activateContactModal();
+      }, 2000);
     }
   }
 
@@ -307,6 +313,13 @@ $(document).ready(function() {
           animatingHarry = false;
         }, 1000);
       }
+    }
+  }
+
+  function activateContactModal() {
+    if (killedQuirrell) {
+      // make display visible
+      $('.black-out-background').removeClass('invisible');
     }
   }
 
