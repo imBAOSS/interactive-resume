@@ -164,6 +164,8 @@ $(document).ready(function() {
     fourth.removeClass('snare-1').addClass('snare-2');
   }
 
+  let killedQuirrell = false;
+
   function triggerQuirrellFight(e) {
     $left = $('.content').position().left
 
@@ -174,6 +176,7 @@ $(document).ready(function() {
       setTimeout(function() {
         $('.quirrell').addClass('dust').removeClass('quirrell-left');
       }, 1000)
+      killedQuirrell = true;
     }
   }
 
@@ -238,6 +241,12 @@ $(document).ready(function() {
     }
   }
 
+  function activateContactModal() {
+    if (killedQuirrell) {
+      // make display visible
+    }
+  }
+
   $(window).keyup(function(e) {
     resetHarryPosition(e);
   })
@@ -247,6 +256,7 @@ $(document).ready(function() {
     animateHarry(e);
     moveLayers(e);
     triggerAnimations(e);
+    activateContactModal();
     // positionHarry();
   })
 
