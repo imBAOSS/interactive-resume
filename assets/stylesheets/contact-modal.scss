@@ -22,10 +22,45 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 
-    input {
-      background-color: rgba(0,0,0,0);
+    .thank-you-text {
+      width: 80%;
+      margin: 20px;
+      z-index: 100000;
     }
+
+    form {
+      height: auto;
+      width: 80%;
+
+      .name-field, .email-field {
+        width: 50%;
+      }
+
+      .message-field {
+        width: 100%;
+      }
+
+      div {
+        input, textarea {
+          background-color: rgba(0,0,0,0);
+          width: 100%;
+          line-height: 3;
+          border: 1px solid gray;
+          border-radius: 5px;
+          margin-bottom: 5px;
+          padding: 2px;
+          z-index: 100000;
+          font-style: $patrick;
+        }
+      }
+
+      .actions input:hover {
+        cursor: pointer
+      }
+    }
+
 
     .congrats-banner-container {
       height: 35%;
@@ -33,6 +68,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: absolute;
+      top: -13%;
 
       .congrats-banner {
         height: 100%;

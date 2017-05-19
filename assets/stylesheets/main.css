@@ -1,5 +1,5 @@
 @charset "UTF-8";
-html, body, h1, h2, h3, h4, h5, h6, p, li, ul, div, span {
+html, body, h1, h2, h3, h4, h5, h6, p, li, ul, div, span, input, textarea {
   margin: 0;
   padding: 0;
   border: none; }
@@ -3423,15 +3423,39 @@ ul, li, p {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
-    .black-out-background .contact-modal-container input {
-      background-color: transparent; }
+    flex-direction: column;
+    position: relative; }
+    .black-out-background .contact-modal-container .thank-you-text {
+      width: 80%;
+      margin: 20px;
+      z-index: 100000; }
+    .black-out-background .contact-modal-container form {
+      height: auto;
+      width: 80%; }
+      .black-out-background .contact-modal-container form .name-field, .black-out-background .contact-modal-container form .email-field {
+        width: 50%; }
+      .black-out-background .contact-modal-container form .message-field {
+        width: 100%; }
+      .black-out-background .contact-modal-container form div input, .black-out-background .contact-modal-container form div textarea {
+        background-color: transparent;
+        width: 100%;
+        line-height: 3;
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        padding: 2px;
+        z-index: 100000;
+        font-style: "Patrick Hand SC", cursive; }
+      .black-out-background .contact-modal-container form .actions input:hover {
+        cursor: pointer; }
     .black-out-background .contact-modal-container .congrats-banner-container {
       height: 35%;
       width: 80%;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      position: absolute;
+      top: -13%; }
       .black-out-background .contact-modal-container .congrats-banner-container .congrats-banner {
         height: 100%;
         width: 100%;
